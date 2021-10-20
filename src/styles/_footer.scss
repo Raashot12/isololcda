@@ -1,2 +1,62 @@
-// variable 
-$primary-color: #2A7C6F;
+// variable
+$primary-color: #2a7c6f;
+.footer-first-item {
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+  a {
+    color: $primary-color;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .telephone-number {
+    color: $primary-color;
+  }
+  .address {
+    margin-top: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: $primary-color;
+    font-size: 0.93rem;
+  }
+}
+.footerlast-item {
+  background-color: $primary-color;
+  width: 100%;
+
+  h4 {
+    color: $button-color;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.675rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer-first-item {
+    padding-top: 2.5rem;
+    h2 {
+      font-weight: bold;
+      font-size: 1.375rem !important;
+    }
+  }
+  .footerlast-item {
+    background-color: $primary-color;
+    width: 100%;
+
+    h4 {
+      font-size: 0.875rem;
+    }
+  }
+}
