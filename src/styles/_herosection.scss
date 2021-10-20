@@ -1,0 +1,58 @@
+.hero-container-section {
+  padding-top: 2rem;
+}
+.welcome-greeting {
+  h1 {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: $primary-color;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    color: $primary-color;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+  .greetings-last-text {
+    color: $primary-color;
+    padding-top: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    font-size: .6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-container-section {
+    padding-top: 6rem;
+  }
+  .welcome-greeting {
+    h1 {
+      font-size: 4rem;
+      font-weight: lighter;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .greetings-last-text {
+      max-width: 650px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 0.9375rem;
+      padding-top: 2rem;
+      font-weight: 700;
+    }
+  }
+}

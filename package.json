@@ -1,0 +1,38 @@
+{
+  "name": "my-gatsby-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Gatsby Site",
+  "author": "Raashot12",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@material-ui/core": "^4.12.3",
+    "gatsby": "^3.14.2",
+    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sass": "^4.14.0",
+    "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-plugin-sitemap": "^4.10.0",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-transformer-sharp": "^3.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.43.2"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  }
+}

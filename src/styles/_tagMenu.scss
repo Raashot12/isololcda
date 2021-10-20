@@ -1,0 +1,30 @@
+.tagline-banner {
+  background-color: $primary-color;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 0.89;
+  letter-spacing: 0.05px;
+}
+.tagline-container {
+  display: flex;
+  justify-content: space-between;
+   a{
+    margin-right: 1rem; 
+  }
+  a:nth-child(4){
+      margin-right: 0;
+  }
+ 
+}
