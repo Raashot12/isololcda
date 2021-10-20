@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 import { Container } from "@material-ui/core"
 export const NavbarMenuLinks = [
     {
@@ -16,8 +16,8 @@ export const NavbarMenuLinks = [
     },
     {
         title: "Council Officials",
-        route: "officals"
-    }
+        route: "officals",
+    },
 ]
 const getSocialLinks = () => {
     return [
@@ -52,8 +52,12 @@ const TagMenu = () => {
     return (
         <div className="tagline-banner">
             <Container>
+
                 <div className="tagline-container">
-                    <div>
+                    <div className="hamburger-box">
+                        <i class="fas fa-hamburger"><span style={ { marginLeft: ".3rem" } }>Home</span></i>
+                    </div>
+                    <div className="menubar-list">
                         { NavbarMenuLinks.map( navitem => (
                             <Link to={ navitem.route } key={ navitem.route } className="nav-link">
                                 { navitem.title }
@@ -78,8 +82,16 @@ const TagMenu = () => {
                     </div>
                 </div>
             </Container>
+            <div></div>
         </div>
     )
 }
 
 export default TagMenu
+
+const MenuBar = () => {
+    return <div></div>
+}
+
+
+

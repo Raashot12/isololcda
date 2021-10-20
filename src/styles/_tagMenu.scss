@@ -20,11 +20,30 @@
 .tagline-container {
   display: flex;
   justify-content: space-between;
-   a{
-    margin-right: 1rem; 
+  align-items: center;
+  a {
+    margin-right: 1rem;
   }
-  a:nth-child(4){
-      margin-right: 0;
+  a:nth-child(4) {
+    margin-right: 0;
   }
- 
+}
+
+.hamburger-box {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .hamburger-box {
+    display: contents !important;
+    color: $button-color;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9rem;
+    }
+  }
+  .menubar-list {
+    display: none;
+  }
 }
