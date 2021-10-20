@@ -52,46 +52,48 @@ const TagMenu = () => {
     return (
         <div className="tagline-banner">
             <Container>
-
-                <div className="tagline-container">
-                    <div className="hamburger-box">
-                        <i class="fas fa-hamburger"><span style={ { marginLeft: ".3rem" } }>Home</span></i>
-                    </div>
-                    <div className="menubar-list">
-                        { NavbarMenuLinks.map( navitem => (
-                            <Link to={ navitem.route } key={ navitem.route } className="nav-link">
-                                { navitem.title }
-                            </Link>
-                        ) ) }
-                    </div>
-                    <div>
-                        { getSocialLinks().map( socialLink => (
-                            <Link
-                                target="_blank"
-                                to={ socialLink.href }
-                                key={ socialLink.id }
-                                className="social-mediai-icons"
-                                title={ socialLink.title }
-                            >
-                                <span
-                                    className={ `fab ${ socialLink.icon } icon-md-footer` }
-                                    style={ { color: "white" } }
-                                ></span>
-                            </Link>
-                        ) ) }
-                    </div>
-                </div>
-            </Container>
-            <div></div>
-        </div>
-    )
+              <div className="tagline-container">
+                  <div className="hamburger-box">
+                      <i class="fas fa-hamburger">
+                          <span style={ { marginLeft: ".3rem" } }>Menu</span>
+                      </i>
+                  </div>
+                  <div className="menubar-list">
+                      { NavbarMenuLinks.map( navitem => (
+                          <Link to={ navitem.route } key={ navitem.route } className="nav-link">
+                              { navitem.title }
+                          </Link>
+            ) ) }
+                  </div>
+                  <div>
+                      { getSocialLinks().map( socialLink => (
+                          <Link
+                              target="_blank"
+                    to={ socialLink.href }
+                    key={ socialLink.id }
+                    className="social-mediai-icons"
+                    title={ socialLink.title }
+                >
+                    <span
+                        className={ `fab ${ socialLink.icon } icon-md-footer` }
+                        style={ { color: "white" } }
+                    ></span>
+                </Link>
+            ) ) }
+                  </div>
+              </div>
+          </Container>
+          <div></div>
+      </div>
+  )
 }
 
 export default TagMenu
 
 const MenuBar = () => {
-    return <div></div>
+    return (
+        <div>
+            <div></div>
+        </div>
+    )
 }
-
-
-

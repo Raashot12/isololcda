@@ -17,16 +17,18 @@ $primary-color: #2a7c6f;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    font-size: .8rem;
     display: block;
   }
   .telephone-number {
     color: $primary-color;
+      font-size: 0.63rem;
   }
   .address {
     margin-top: 0.5rem;
     font-family: "Open Sans", sans-serif;
     color: $primary-color;
-    font-size: 0.93rem;
+    font-size: 0.63rem;
   }
 }
 .footerlast-item {
@@ -50,6 +52,9 @@ $primary-color: #2a7c6f;
       font-weight: bold;
       font-size: 1.375rem !important;
     }
+    a{
+        font-size: 1rem !important;
+    }
   }
   .footerlast-item {
     background-color: $primary-color;
@@ -58,5 +63,11 @@ $primary-color: #2a7c6f;
     h4 {
       font-size: 0.875rem;
     }
+  }
+  .telephone-number{
+      font-size: .9rem !important;
+  }
+  .address{
+      font-size: .9rem !important;
   }
 }

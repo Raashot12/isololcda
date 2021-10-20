@@ -2,6 +2,7 @@ import { Container } from "@material-ui/core"
 import React from "react"
 import logo from "../../images/logolocal.webp"
 import { useMediaQuery } from "../../helpers/mediaQueries"
+import TagMenu from "../TagMenu"
 const Navbar = () => {
     const deviceSize = useMediaQuery()
     return (
@@ -22,6 +23,7 @@ const Navbar = () => {
                     </span>
                 </nav>
             </Container>
+            <TagMenu />
         </div>
     )
 }
