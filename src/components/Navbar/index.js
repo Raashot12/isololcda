@@ -2,6 +2,7 @@ import { Container } from "@material-ui/core"
 import React from "react"
 import logo from "../../images/logolocal.webp"
 import { useMediaQuery } from "../../helpers/mediaQueries"
+import PropTypes from "prop-types"
 import TagMenu from "../TagMenu"
 const Navbar = () => {
     const deviceSize = useMediaQuery()
@@ -29,3 +30,10 @@ const Navbar = () => {
 }
 
 export default Navbar
+Navbar.propTypes = {
+    siteTitle: PropTypes.string,
+}
+
+Navbar.defaultProps = {
+    siteTitle: ``,
+}

@@ -43,7 +43,7 @@ const Layout = ( { children } ) => {
 
       </Helmet>
 
-      <Navbar />
+      <Navbar siteTitle={ data.site.siteMetadata?.title || `Title` } />
       <main>{ children }</main>
       <Footer />
     </div>
