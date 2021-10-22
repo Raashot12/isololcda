@@ -5,27 +5,27 @@ import Layout from "../components/layout"
 import Loader from "../helpers/LoaderSpinner/Loader"
 
 const IndexPage = () => {
-  const [spinner, setSpinner] = useState( true )
+  const [spinner, setSpinner] = useState(true)
 
   // It will be executed before rendering
-  useEffect( () => {
-    const id = setTimeout( () => setSpinner( false ), 1000 )
+  useEffect(() => {
+    const id = setTimeout(() => setSpinner(false), 1000)
 
-     return () => {
-       clearTimeout( id );
-    };
-    }, [])
+    return () => {
+      clearTimeout(id)
+    }
+  }, [])
 
   return (
     <>
-      { !spinner ? (
+      {!spinner ? (
         <Layout>
           <HeroSection />
           <ContactUs />
         </Layout>
       ) : (
         <Loader />
-      ) }
+      )}
     </>
   )
 }
