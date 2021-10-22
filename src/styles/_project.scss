@@ -30,6 +30,7 @@
     width: 300px;
     border: 1px solid rgb(218, 218, 218, 0.2);
     padding: 0.2rem;
+    margin-bottom: 1rem;
   }
   img {
     height: 200px;
@@ -55,6 +56,13 @@
     border: 1px solid $primary-color;
     border-radius: .6rem;
     margin-bottom: 1rem;
+    color: $primary-color;
+    &:hover{
+      transition: all 0.5s ease-in-out;
+      background-color: $primary-color;
+      color:$button-color;
+      transform: translateY(-2px);
+    }
   }
 }
 .img-car-projects {
@@ -62,6 +70,19 @@
   max-width: 362px;
 }
 
+@media  screen and (max-width: 766.99px) {
+  .img-car-projects{
+    max-width: 100%;
+  }
+  .projects-flex-container{
+    .card-item-for-projects{
+      width: 100%;
+    }
+  }
+  img{
+    height: auto !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .projectbg {
     h1 {
