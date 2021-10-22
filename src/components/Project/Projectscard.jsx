@@ -19,14 +19,14 @@ const data = [
     cardtitle: "INFRASTRUCTURE",
     image: infrastructure,
     caption:
-      "Infrastructural development in Isolo LCDA Under Olasoju's Administration.",
+      "Investment in infrastructure is a long term requirement for growth and development in Isolo LCDA",
     route: "/project/infrastucture",
   },
   {
     cardtitle: "EDUCATION",
     image: education,
     caption:
-      "Provision of GCE form to students within Isolo LCDA as form a educational support.",
+      "Education remains the key to both economic and political empowerment in our policy",
     route: "/project/eudcation",
   },
   {
