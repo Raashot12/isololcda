@@ -9,18 +9,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h1{
-      font-size: 4rem;
-      color: $button-color;
+  h1 {
+    font-size: 4rem;
+    color: $button-color;
   }
+}
+.projects-flex-container {
+  display: flex;
+  color: $primary-color;
+  padding-top: 3rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  h2 {
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+  }
+  .card-item-for-projects {
+    width: 300px;
+    border: 1px solid rgb(218, 218, 218, 0.2);
+    padding: 0.2rem;
+  }
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  .let-go-link {
+    text-decoration: none;
+  }
+  .let-go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-transform: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $primary-color;
+    border-radius: .6rem;
+    margin-bottom: 1rem;
+  }
+}
+.img-car-projects {
+  width: 100%;
+  max-width: 362px;
 }
 
 @media screen and (max-width: 767px) {
-    .projectbg{
-        h1{
-            font-size: 1.5rem;
-        }
+  .projectbg {
+    h1 {
+      font-size: 1.5rem;
     }
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .projectbg {

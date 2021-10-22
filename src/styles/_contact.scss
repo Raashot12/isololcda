@@ -73,7 +73,14 @@
     }
   }
 }
-
+.contactus-text {
+  text-align: center;
+  color: $button-color;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
 @media screen and (min-width: 900px) {
   .contact-us-contact {
     margin-top: 9rem;
@@ -84,5 +91,8 @@
   .form-container {
     padding-top: 6rem !important;
     padding-bottom: 6rem !important;
+  }
+  .contactus-text {
+    font-size: 2rem !important;
   }
 }

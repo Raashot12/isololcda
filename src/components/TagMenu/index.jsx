@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Container } from "@material-ui/core"
-import { navigate } from "@reach/router"
+
 
 export const NavbarMenuLinks = [
     {
