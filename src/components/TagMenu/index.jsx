@@ -119,7 +119,7 @@ const MenuBar = ( { handleClose, setHamburger, hamburger } ) => {
                 { getSocialLinks().map( socialLink => (
                     <a
                         target="_blank"
-                        to={ socialLink.href }
+                        href={ socialLink.href }
                         key={ socialLink.id }
                         className="social-mediai-icons"
                         title={ socialLink.title }

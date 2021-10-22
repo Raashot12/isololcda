@@ -12,14 +12,14 @@ const data = [
     cardtitle: "HEALTH CARE",
     image: health,
     caption:
-      "Medical support and Health check up in Isolo LCDA under the Olasoju's Admininstration",
+      "Medical support and Health check up in Isolo LCDA under Olasoju's Admininstration",
     route: "/project/health",
   },
   {
     cardtitle: "INFRASTRUCTURE",
     image: infrastructure,
     caption:
-      "Infrastructural development in Isolo LCDA Under the Olasoju's Administration.",
+      "Infrastructural development in Isolo LCDA Under Olasoju's Administration.",
     route: "/project/infrastucture",
   },
   {
