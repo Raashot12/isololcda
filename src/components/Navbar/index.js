@@ -1,5 +1,6 @@
-import { Container } from "@material-ui/core"
 import React from "react"
+import { Container } from "@material-ui/core"
+import { Link } from "gatsby"
 import logo from "../../images/logolocal.webp"
 import { useMediaQuery } from "../../helpers/mediaQueries"
 import PropTypes from "prop-types"
@@ -11,13 +12,20 @@ const Navbar = () => {
             <Container>
                 <nav>
                     <div className="logobrand-container">
-                        <img
-                            src={ logo }
-                            alt="logo of Local goverment Isolo Lagos"
-                            className="logo-icon"
-                        />
-                        { deviceSize === "desktop" ? <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA </h4> : deviceSize === "tablet" ? <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA </h4> : <h4>ISOLO LCDA </h4> }
-
+                        <Link to="/">
+                            <img
+                                src={ logo }
+                                alt="logo of Local goverment Isolo Lagos"
+                                className="logo-icon"
+                            />
+                        </Link>
+                        { deviceSize === "desktop" ? (
+                            <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA </h4>
+                        ) : deviceSize === "tablet" ? (
+                            <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA </h4>
+                        ) : (
+                            <h4>ISOLO LCDA </h4>
+                        ) }
                     </div>
                     {/* <span>
                         <button>Get In Touch</button>

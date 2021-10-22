@@ -26,27 +26,27 @@ const getSocialLinks = () => {
         {
             id: 1,
             icon: "fa-instagram",
-            href: "https://instagram.com/trysamar",
+            href: "https://www.instagram.com/bayo_olasoju/",
             title: "Local government Instagram",
         },
         {
             id: 2,
             icon: "fa-youtube",
             title: "Local government YouTube",
-            href: "https://www.youtube.com/channel/UCy4KzGrFAbS7EXcm-Y0JlpQ",
+            href: "https://www.youtube.com/channel/UClqZ4erdAFqNptf1fDdZJgg?app=desktop",
         },
         {
             id: 3,
             icon: "fa-facebook-square",
             title: "Local government Facebook",
-            href: "https://fb.com/trysamar",
+            href: "https://web.facebook.com/groups/832579194037271/",
         },
-        {
-            id: 4,
-            icon: "fa-twitter",
-            title: "Local government Twitter",
-            href: "https://twitter.com/trysamar",
-        },
+        // {
+        //     id: 4,
+        //     icon: "fa-twitter",
+        //     title: "Local government Twitter",
+        //     href: "https://twitter.com/trysamar",
+        // },
     ]
 }
 
@@ -77,7 +77,7 @@ const TagMenu = () => {
                         { getSocialLinks().map( socialLink => (
                             <a
                                 target="_blank"
-                                to={ socialLink.href }
+                                href={ socialLink.href }
                                 key={ socialLink.id }
                                 className="social-mediai-icons"
                                 title={ socialLink.title }
