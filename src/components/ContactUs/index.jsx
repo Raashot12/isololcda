@@ -2,12 +2,16 @@ import { Container } from "@material-ui/core"
 import React from "react"
 
 const ContactUs = () => {
+
+  const handleFormSubmit = ( e ) => {
+    e.preventDefault()
+  }
   return (
     <div className="contact-us-contact">
       <Container>
         <div className="form-container">
           <h1 className="contactus-text">Contact</h1>
-          <form>
+          <form onSubmit={ handleFormSubmit }>
             <div className="input-container-form">
               <div>
                 <label htmlFor="name">Name*</label>
