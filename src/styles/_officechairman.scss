@@ -1,0 +1,47 @@
+.chairman-banner {
+  margin-top: 1rem;
+
+  h1 {
+    color: $primary-color;
+  }
+}
+.chairman-statement {
+  text-align: center;
+  margin-top: 2rem;
+  border: 1px solid rgb(3, 128, 3, 0.2);
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  h1 {
+    color: $primary-color;
+    font-family: "Open Sans", sans-serif;
+  }
+  p {
+    color: $primary-color;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.5rem;
+  }
+  hr {
+    border: 0.1px solid rgb(0, 128, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chairman-statement {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    h1{
+        font-size: 1.2rem
+    }
+    p{
+       font-size: .7rem; 
+    }
+    hr{
+        display: none;
+    }
+  }
+}

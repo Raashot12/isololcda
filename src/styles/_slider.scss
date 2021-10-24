@@ -1,0 +1,27 @@
+@media screen and (max-width: 414px) {
+  .center-slider {
+    display: block;
+    transform: translateX(20px) !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .center-slider {
+    display: block;
+    transform: translateX(50px);
+  }
+}
+
+@media screen and (min-width: 801.99px) {
+  .center-slider {
+    display: block;
+    transform: translateX(80px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .center-slider {
+    display: block;
+    transform: translateX(80px);
+  }
+}

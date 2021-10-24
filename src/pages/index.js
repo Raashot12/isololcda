@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import ContactUs from "../components/ContactUs"
 import HeroSection from "../components/HeroSection"
 import Layout from "../components/layout"
+import AutoPlayMethods from "../components/LocalGovernmentEvents"
 import Loader from "../helpers/LoaderSpinner/Loader"
 
 const IndexPage = () => {
@@ -21,6 +22,7 @@ const IndexPage = () => {
       {!spinner ? (
         <Layout>
           <HeroSection />
+          <AutoPlayMethods />
           <ContactUs />
         </Layout>
       ) : (
