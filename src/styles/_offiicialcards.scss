@@ -1,0 +1,54 @@
+.officials-card {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 300px;
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  height: fit-content;
+  transition: 2s;
+  border-radius: .4rem;
+  .text-card {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+ 
+}
+.officials-card:hover{
+     -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+   img{
+      transform: scale(1.0423);
+  }
+}
+.officials-card:hover .text-card {
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-column-break-inside: avoid;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $button-color;
+ -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.space-above-officials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

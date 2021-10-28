@@ -18,7 +18,7 @@ export const NavbarMenuLinks = [
     },
     {
         title: "Council Officials",
-        route: "officals",
+        route: "/officials",
     },
 ]
 const getSocialLinks = () => {
