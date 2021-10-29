@@ -23,7 +23,7 @@ const CouncilOfficials = () => {
                     } }
                 >
                     <OfficialTemplate
-                        name="Bayo Olasoju"
+                        name="Otunba Bayo Olasoju"
                         title="Chairman Isolo LCDA"
                         pathimage={ chairmanimage }
                     />
@@ -35,14 +35,14 @@ const CouncilOfficials = () => {
                         pathimage="https://res.cloudinary.com/rashot/image/upload/v1635494550/2_zuiope.jpg"
                     />
                     <OfficialTemplate
-                        name="Kanayo Oyedinma  Osodun"
-                        title="Deputy Leader Isolo LCDA"
-                        pathimage={ deputy }
-                    />
-                    <OfficialTemplate
                         name="Akeem Ayoola Alarape (Leader of the house)"
                         title="Councilor Ilasamaja Ward"
                         pathimage={ Leader }
+                    />
+                    <OfficialTemplate
+                        name="Kanayo Oyedinma  Osodun"
+                        title="Deputy Leader Isolo LCDA"
+                        pathimage={ deputy }
                     />
                     <OfficialTemplate
                         name="Bisodun Odusina Adeoye"
