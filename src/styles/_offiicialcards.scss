@@ -8,7 +8,7 @@
   cursor: pointer;
   height: fit-content;
   transition: 2s;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   .text-card {
     transform: translate(-50%, -50%);
     position: absolute;
@@ -19,15 +19,19 @@
     width: 100%;
     display: none;
   }
- 
 }
-.officials-card:hover{
-     -webkit-transition: background-color 2s ease-out;
+.officials-card:hover {
+  -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-   img{
-      transform: scale(1.0423);
+  img {
+    transform: scale(1.0423);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 }
 .officials-card:hover .text-card {
@@ -42,7 +46,7 @@
   top: 50%;
   left: 50%;
   color: $button-color;
- -webkit-transition: background-color 2s ease-out;
+  -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
