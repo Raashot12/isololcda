@@ -2,14 +2,13 @@ import { Container } from "@material-ui/core"
 import React from "react"
 import OfficialTemplate from "../../helpers/OfficialTemplate"
 import chairmanimage from "../../images/1.jpg"
-import vicechairman from "../../images/2.jpg"
 import deputy from "../../images/3.jpg"
 import Leader from "../../images/4.jpg"
 import bisodun from "../../images/5.jpg"
 import idris from "../../images/6.jpg"
 import igboman from "../../images/7.jpg"
 import kayode from "../../images/8.jpg"
-import yusuf from "../../images/9.jpg"
+
 const CouncilOfficials = () => {
     return (
         <>
