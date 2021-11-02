@@ -13,7 +13,7 @@ const Footer = () => {
                 >
                     olasojuadebayo.isololcda@gmail.com
                 </a>
-                <p className="telephone-number">123-456-7890</p>
+                <p className="telephone-number">070-2512-0018</p>
                 <p className="address">Osolo Way, Aswani 102214, Lagos, Nigeria</p>
             </div>
             <div className="footerlast-item">
