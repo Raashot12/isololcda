@@ -56,7 +56,6 @@ const TagMenu = () => {
     const handleClose = () => {
         setHamburger( !hamburger )
     }
-    console.log( hamburger )
     return (
         <div className="tagline-banner">
             <Container>
