@@ -18,17 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: "rashot",
-        apiKey: "284966265657346",
-        apiSecret: "5HjORMA20Ir1tKwavZE-YUEwWF8",
-        resourceType: `image`,
-        type: `type Value`,
-        prefix: `abc-xyz/`
-      }
-    },
-    {
       resolve: `gatsby-source-strapi`,
       options: {
         // queryLimit: 100,
