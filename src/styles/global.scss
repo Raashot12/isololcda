@@ -36,6 +36,9 @@ html {
   text-decoration: underline;
   cursor: pointer;
 }
+.fa-phone-volume{
+  margin-right: 0.4rem;
+}
 /* set the body width with media query */
 @media screen and (max-width:900px) {
   .event-slider-carousel-text{

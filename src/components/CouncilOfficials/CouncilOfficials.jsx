@@ -26,6 +26,8 @@ const CouncilOfficials = () => {
                         name="Otunba Adebayo Olasoju"
                         title="Chairman Isolo LCDA"
                         pathimage={ chairmanimage }
+                        telephone={ `07025120018` }
+                        icon={ <i className="fas fa-phone-volume"></i> }
                     />
                 </div>
                 <div className="space-above-officials">
@@ -40,7 +42,7 @@ const CouncilOfficials = () => {
                         pathimage={ Leader }
                     />
                     <OfficialTemplate
-                        name="Kanayo Oyedinma  Osodun (Deputy Leader Isolo LCDA)"
+                        name="Kanayo Oyedinma  O. (Deputy Leader Isolo LCDA)"
                         title="Councilor Okota Ward"
                         pathimage={ deputy }
                     />
