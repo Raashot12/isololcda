@@ -1,7 +1,7 @@
 import { Container } from "@material-ui/core"
 import React, { Component } from "react"
 import Slider from "react-slick"
-import { motion } from "framer-motion"
+
 export default class Visitation extends Component {
     constructor ( props ) {
         super( props )
@@ -29,13 +29,11 @@ export default class Visitation extends Component {
         return (
             <div>
                 <Container>
-                    <motion.h3
+                    <h3
                         className="event-slider-carousel-text"
-                        animate={ { opacity: [0, 1], x: [-100, -100, 0] } }
-                        transition={ { ease: "easeOut", duration: 3 } }
                     >
                         Courtesy Visits
-                    </motion.h3>
+                    </h3>
                     <Slider
                         ref={ slider => ( this.slider = slider ) }
                         { ...settings }

@@ -23,7 +23,7 @@ const CouncilOfficials = () => {
                     } }
                 >
                     <OfficialTemplate
-                        name="Otunba Bayo Olasoju"
+                        name="Otunba Adebayo Olasoju"
                         title="Chairman Isolo LCDA"
                         pathimage={ chairmanimage }
                     />

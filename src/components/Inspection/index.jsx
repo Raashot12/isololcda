@@ -30,8 +30,6 @@ export default class Inspection extends Component {
                 <Container>
                     <motion.h3
                         className="event-slider-carousel-text"
-                        animate={ { opacity: [0, 1], x: [-100, -100, 0] } }
-                        transition={ { ease: "easeOut", duration: 6 } }
                     >
                         Inspection
                     </motion.h3>
