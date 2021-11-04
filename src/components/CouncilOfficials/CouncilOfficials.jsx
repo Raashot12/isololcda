@@ -40,8 +40,8 @@ const CouncilOfficials = () => {
                         pathimage={ Leader }
                     />
                     <OfficialTemplate
-                        name="Kanayo Oyedinma  Osodun"
-                        title="Deputy Leader Isolo LCDA"
+                        name="Kanayo Oyedinma  Osodun (Deputy Leader Isolo LCDA)"
+                        title="Councilor Okota Ward"
                         pathimage={ deputy }
                     />
                     <OfficialTemplate
