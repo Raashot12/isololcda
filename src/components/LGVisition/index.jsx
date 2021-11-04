@@ -23,7 +23,7 @@ export default class Visitation extends Component {
             slidesToScroll: 1,
             variableWidth: true,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
         }
 
         return (
