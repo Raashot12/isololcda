@@ -29,15 +29,29 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+.event-slider-carousel-text{
+  color: $primary-color;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
 /* set the body width with media query */
+@media screen and (max-width:900px) {
+  .event-slider-carousel-text{
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   body {
     --width-device: 1200px;
+    overflow-x: hidden;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
     --width-device: 768px;
+     overflow-x: hidden;
   }
 }

@@ -2,7 +2,7 @@ import { Container } from "@material-ui/core"
 import React, { Component } from "react"
 import Slider from "react-slick"
 import { motion } from "framer-motion"
-export default class AutoPlayMethods extends Component {
+export default class Inspection extends Component {
     constructor ( props ) {
         super( props )
         this.play = this.play.bind( this )
@@ -23,25 +23,24 @@ export default class AutoPlayMethods extends Component {
             slidesToScroll: 1,
             variableWidth: true,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
         }
-
         return (
             <div>
                 <Container>
                     <motion.h3
                         className="event-slider-carousel-text"
                         animate={ { opacity: [0, 1], x: [-100, -100, 0] } }
-                        transition={ { ease: "easeOut", duration: 3 } }
+                        transition={ { ease: "easeOut", duration: 6 } }
                     >
-                        Event
+                        Inspection
                     </motion.h3>
                     <Slider
                         ref={ slider => ( this.slider = slider ) }
                         { ...settings }
                         style={ { height: "176px", overflow: "hidden", } }
                     >
-                        { this.props.occassion.nodes[0].images.map( ( graphics, index ) => {
+                        { this.props.inspection.nodes[0].images.map( ( graphics, index ) => {
                             return (
                                 <div key={ index }>
                                     <img
@@ -51,7 +50,7 @@ export default class AutoPlayMethods extends Component {
                                         width="auto"
                                         style={ { marginRight: "1.5rem" } }
                                     />
-                            </div>
+                                </div>
                             )
                         } ) }
                     </Slider>
