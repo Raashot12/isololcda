@@ -5,7 +5,6 @@
   position: relative;
   margin-bottom: 2rem;
   overflow: hidden;
-  cursor: pointer;
   height: fit-content;
   transition: 2s;
   border-radius: 0.4rem;
@@ -42,6 +41,8 @@
   justify-content: center;
   backface-visibility: hidden;
   transform: translate(-50%, -50%);
+  padding-left: 1rem;
+  padding-right: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
