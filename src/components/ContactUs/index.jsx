@@ -1,7 +1,7 @@
 import { Container } from "@material-ui/core"
 import React, { useState } from "react"
 import Airtable from "airtable"
-import Spinner from "react-spinkit";
+// import Spinner from "react-spinkit";
 const ContactUs = () => {
 
   const [contact, setContact] = useState( { fullName: "", email: "", subject: "", message: "" } )
@@ -76,7 +76,7 @@ const ContactUs = () => {
             </div>
             <div className="input-container-form">
               <button type="submit">Submit</button>
-              <Spinner name="circle" style={ { width: 100, height: 100 } } />
+              {/* <Spinner name="circle" style={ { width: 100, height: 100 } } /> */ }
             </div>
           </form>
         </div>
