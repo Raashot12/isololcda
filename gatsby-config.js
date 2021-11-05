@@ -20,7 +20,6 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        // queryLimit: 100,
         apiURL: process.env.DEPLOY_URL ? "https://backendlcdaisolo.herokuapp.com" : "http://localhost:1337",
         collectionTypes: [`articles`, `occassions`, `outings`],
       },
