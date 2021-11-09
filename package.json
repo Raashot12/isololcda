@@ -36,7 +36,8 @@
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.1",
     "react-spinkit": "^3.0.0",
-    "sass": "^1.43.2"
+    "sass": "^1.43.2",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "prettier": "2.4.1"

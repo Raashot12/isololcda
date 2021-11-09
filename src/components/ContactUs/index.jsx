@@ -1,10 +1,13 @@
 import { Container } from "@material-ui/core"
 import React, { useState } from "react"
 import Airtable from "airtable"
-// import Spinner from "react-spinkit";
+import Spinner from "react-spinkit";
+import swal from 'sweetalert';
+
 const ContactUs = () => {
 
   const [contact, setContact] = useState( { fullName: "", email: "", subject: "", message: "" } )
+  const [isSubmitting, setIsubmitting] = useState( false )
   const handleChange = e => {
     setContact( {
       ...contact,
@@ -23,7 +26,10 @@ const ContactUs = () => {
     } )
   }
 
+
+
   const handleFormSubmit = e => {
+    setIsubmitting( true )
     e.preventDefault()
     getAirTableClient()
       .then( airtable => {
@@ -33,17 +39,26 @@ const ContactUs = () => {
           ( error, record ) => {
             if ( error ) {
               console.log( "an error occurred", error )
+              setIsubmitting( false )
+
               return
             }
             console.log( "record created", record )
+            swal( "Submitted Successfully!", "You clicked the button!", "success" );
+            setIsubmitting( false )
+            setContact( { fullName: "", email: "", subject: "", message: "" } )
           }
         )
       } )
       .catch( e => {
         console.log( e )
+        setIsubmitting( false )
       } )
+
   }
-  
+
+
+
   return (
     <div className="contact-us-contact">
       <Container>
@@ -54,29 +69,32 @@ const ContactUs = () => {
               <div>
                 <label htmlFor="name">Name*</label>
               </div>
-              <input type="text" name="fullName" placeholder="Enter your name" required onChange={ handleChange } />
+              <input type="text" name="fullName" value={ contact.fullName } placeholder="Enter your name" required onChange={ handleChange } />
             </div>
             <div className="input-container-form">
               <div>
                 <label htmlFor="email">Email*</label>
               </div>
-              <input type="text" name="email" placeholder="Enter your email" required onChange={ handleChange } />
+              <input type="text" name="email" value={ contact.email } placeholder="Enter your email" required onChange={ handleChange } />
             </div>
             <div className="input-container-form">
               <div>
                 <label htmlFor="subject">Subject*</label>
               </div>
-              <input type="text" name="subject" placeholder="Type the subject" required onChange={ handleChange } />
+              <input type="text" name="subject" value={ contact.subject } placeholder="Type the subject" required onChange={ handleChange } />
             </div>
             <div className="input-container-form">
               <div>
                 <label htmlFor="message">Message</label>
               </div>
-              <textarea type="text" name="message" placeholder="Enter your message" required onChange={ handleChange } />
+              <textarea type="text" name="message" value={ contact.message } placeholder="Enter your message" required onChange={ handleChange } />
             </div>
             <div className="input-container-form">
-              <button type="submit">Submit</button>
-              {/* <Spinner name="circle" style={ { width: 100, height: 100 } } /> */ }
+              { !isSubmitting ? <button type="submit">Submit</button> :
+                <div style={ { display: "flex", alignItems: "center", justifyContent: "center" } } className="spinner-container">
+                  <Spinner name="circle" className="spinner" />
+                </div>
+              }
             </div>
           </form>
         </div>
