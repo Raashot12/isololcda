@@ -13,13 +13,18 @@ export const NavbarMenuLinks = [
         route: "/projects",
     },
     {
-        title: "Office of The Chairman",
-        route: "/ofchairman",
+        title: "Blog",
+        route: "/blog",
     },
     {
         title: "Council Officials",
         route: "/officials",
     },
+    {
+        title: "Office of The Chairman",
+        route: "/ofchairman",
+    },
+
 ]
 const getSocialLinks = () => {
     return [
