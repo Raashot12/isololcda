@@ -1,14 +1,13 @@
 import { Container } from '@material-ui/core'
 import React from 'react'
+import BlogHero from '../components/Blog/BlogHero'
 import Layout from '../components/layout'
 
 const blog = () => {
   return (
     <>
       <Layout>
-        <Container>
-          <h1>hELLO WORLD</h1>
-        </Container>
+        <BlogHero />
       </Layout>
     </>
   )

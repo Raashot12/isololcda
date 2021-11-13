@@ -46,12 +46,6 @@ const getSocialLinks = () => {
             title: "Local government Facebook",
             href: "https://web.facebook.com/groups/832579194037271/",
         },
-        // {
-        //     id: 4,
-        //     icon: "fa-twitter",
-        //     title: "Local government Twitter",
-        //     href: "https://twitter.com/trysamar",
-        // },
     ]
 }
 

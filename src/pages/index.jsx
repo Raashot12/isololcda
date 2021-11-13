@@ -10,8 +10,8 @@ import Inspection from "../components/Inspection"
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
   const [spinner, setSpinner] = useState( true )
-  
   // It will be executed before rendering
+  console.log( inspection )
   useEffect( () => {
     const id = setTimeout( () => setSpinner( false ), 1000 )
 
@@ -25,7 +25,7 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
       { !spinner ? (
         <Layout>
           <HeroSection />
-          <Inspection inspection={inspection } />
+          <Inspection inspection={ inspection } />
           <Event occassion={ occassion } />
           <Visitation courtesy={ courtesy } />
           <ContactUs />
@@ -39,22 +39,24 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
 
 export default IndexPage
 export const pageQuery = graphql`
- query {
-  occassion :allStrapiOccassions(filter: {outing: {id: {eq: 1}}}) {
+{
+  courtesy: allStrapiOccassions(
+    filter: {outings: {elemMatch: {occassion: {eq: 1}}}}
+  ) {
     nodes {
       images {
         url
       }
     }
   }
-  courtesy :allStrapiOccassions(filter: {outing: {id: {eq: 2}}}) {
+    occassion :allStrapiOccassions(filter: {outings: {elemMatch: {occassion: {eq: 2}}}}) {
     nodes {
       images {
         url
       }
     }
   }
-  inspection :allStrapiOccassions(filter: {outing: {id: {eq: 3}}}) {
+  inspection :allStrapiOccassions(filter: {outings: {elemMatch: {occassion: {eq: 3}}}}) {
     nodes {
       images {
         url
