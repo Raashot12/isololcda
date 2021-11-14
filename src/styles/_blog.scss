@@ -1,11 +1,22 @@
-.blog-banner{
-padding-top: 130px;
-padding-bottom: 130px;
-background-image: url(../images/blogimagpages.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-width: 100%;
-text-align: center;
+.blog-banner {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url(../images/blogimagpages.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: $button-color;
+}
 
+@media screen and (max-width: 567px) {
+  .blog-banner {
+    padding-top: 71px;
+    padding-bottom: 71px;
+    h1{
+      font-size: 1.2rem;
+    }
+  }
 }
