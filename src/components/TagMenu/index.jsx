@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Container } from "@material-ui/core"
 
-
 export const NavbarMenuLinks = [
     {
         title: "Home",
@@ -24,7 +23,6 @@ export const NavbarMenuLinks = [
         title: "Office of The Chairman",
         route: "/ofchairman",
     },
-
 ]
 const getSocialLinks = () => {
     return [
@@ -51,6 +49,7 @@ const getSocialLinks = () => {
 
 const TagMenu = () => {
     const [hamburger, setHamburger] = useState( false )
+    const [activeNav, setActiveNav] = useState( "home" )
 
     const handleClose = () => {
         setHamburger( !hamburger )
@@ -66,7 +65,13 @@ const TagMenu = () => {
                     </div>
                     <div className="menubar-list">
                         { NavbarMenuLinks.map( navitem => (
-                            <Link to={ navitem.route } key={ navitem.route } className="nav-link">
+                            <Link
+                                to={ navitem.route }
+                                key={ navitem.route }
+                                exact
+                                activeClassName="active"
+                                className="nav-link"
+                            >
                                 { navitem.title }
                             </Link>
                         ) ) }
@@ -101,7 +106,6 @@ const TagMenu = () => {
 export default TagMenu
 
 const MenuBar = ( { handleClose, setHamburger, hamburger } ) => {
-
     const handleMenuClose = () => {
         setHamburger( false )
     }
@@ -110,7 +114,13 @@ const MenuBar = ( { handleClose, setHamburger, hamburger } ) => {
             <div className={ `sidebar-container-${ hamburger }` }>
                 <i className="fas fa-times" onClick={ handleClose }></i>
                 { NavbarMenuLinks.map( navitem => (
-                    <Link to={ navitem.route } onClick={handleMenuClose } key={ navitem.route } className="sidebar-list">
+                    <Link
+                        to={ navitem.route }
+                        onClick={ handleMenuClose }
+                        key={ navitem.route }
+                        activeClassName="active"
+                        className="sidebar-list"
+                    >
                         { navitem.title }
                     </Link>
                 ) ) }
