@@ -68,7 +68,6 @@ const TagMenu = () => {
                             <Link
                                 to={ navitem.route }
                                 key={ navitem.route }
-                                exact
                                 activeClassName="active"
                                 className="nav-link"
                             >

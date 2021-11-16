@@ -47,6 +47,7 @@ export default class Visitation extends Component {
                                         alt=""
                                         height="150px"
                                         width="auto"
+                                        loading="lazy"
                                         style={ { marginRight: "1.5rem" } }
                                     />
                                 </div>
@@ -58,3 +59,4 @@ export default class Visitation extends Component {
         )
     }
 }
+

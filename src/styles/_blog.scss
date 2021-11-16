@@ -11,11 +11,36 @@
   color: $button-color;
 }
 
+// Blog cards styling
+.grid-wrapper {
+  --auto-grid-min-size: 20rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  article {
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 24px;
+    list-style-type: none;
+    padding: 5rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 567px) {
   .blog-banner {
     padding-top: 71px;
     padding-bottom: 71px;
-    h1{
+    h1 {
       font-size: 1.2rem;
     }
   }
