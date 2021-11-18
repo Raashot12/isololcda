@@ -19,11 +19,11 @@ const Navbar = () => {
                                 className="logo-icon"
                             />
                         </Link>
-                        <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA </h4>
+                        { deviceSize === "mobile" ? <h4>ISOLO LCDA </h4> : deviceSize === "tablet" ? <h4>ISOLO LCDA</h4> : <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA</h4> }
                     </div>
-                    {/* <span>
+                    <span>
                         <button>Get In Touch</button>
-                    </span> */}
+                    </span>
                 </nav>
             </Container>
             <TagMenu />

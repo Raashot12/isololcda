@@ -2,14 +2,17 @@ import React, { Component } from 'react'
 import BlogCard from '../components/Blog/BlogCard'
 import BlogHero from '../components/Blog/BlogHero'
 import Layout from '../components/layout'
-
+import { graphql } from "gatsby"
 export default class Blog extends Component {
-  state = {
-    loading: false,
-    posts: [],
-    mainPost: [],
-    currentPage: 0,
-  };
+  constructor ( props ) {
+    super( props )
+    this.state = {
+      loading: false,
+      posts: [],
+      mainPost: [],
+      currentPage: 0,
+    };
+  }
 
   // fetch API funcitonality
   async fetchBlog() {
@@ -27,7 +30,6 @@ export default class Blog extends Component {
         posts: [data],
         mainPost: dataArray.splice( 0, 6 ),
       } );
-      console.log( this.state.posts )
     } catch ( error ) {
       this.setState( {
         loading: false,
@@ -78,9 +80,28 @@ export default class Blog extends Component {
       <div>
         <Layout>
           <BlogHero />
-          <BlogCard />
+          <BlogCard blogs={ this.props.data.blogs } />
         </Layout>
       </div>
     )
   }
 }
+export const query = graphql`
+query MyQuery {
+  blogs:allStrapiBlogs {
+    nodes {
+      description
+      slug
+      pictures {
+        formats {
+          medium {
+            url
+          }
+        }
+      }
+      title
+      updated_at
+    }
+  }
+}
+`

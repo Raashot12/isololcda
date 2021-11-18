@@ -50,3 +50,4 @@ export const useMediaQuery = () => {
     // return the device state
     return device;
 };
+
