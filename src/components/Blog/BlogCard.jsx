@@ -15,7 +15,7 @@ const BlogCard = ( { blogs } ) => {
                 <p className="blog-text-title">{ blog.title }</p>
                 <p className="blog-card-description">{ blog.description }</p>
               </div>
-              <span className="blog"><em>{ moment( blog.updated_at ).format( "LL" ) }</em></span>
+              <p className="blog-card-data"><i>{ moment( blog.updated_at ).format( "LL" ) }</i></p>
             </article>
           } ) }
         </div>
