@@ -23,6 +23,7 @@
   );
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none !important;
   article {
     background-color: white;
     color: $primary-color;
@@ -37,6 +38,7 @@
       font-weight: bold;
       margin-bottom: 0.6rem;
     }
+
     .blog-text-container {
       padding-left: 0.2rem;
       padding-right: 0.2rem;
@@ -69,7 +71,9 @@
     max-width: 100%;
   }
 }
-
+.pagination-space-top {
+  padding-top: 2rem;
+}
 @media screen and (max-width: 567px) {
   .blog-banner {
     padding-top: 71px;

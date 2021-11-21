@@ -10,6 +10,7 @@
 @import "slider";
 @import "offiicialcards";
 @import "blog";
+@import "pagination";
 html {
   font-size: 16px;
   --width-device: 1700px;
@@ -45,6 +46,15 @@ html {
   display: block;
   margin-top: .2rem;
 }
+
+//pagination styling 
+.pagination-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
 /* set the body width with media query */
 @media screen and (max-width:900px) {
   .event-slider-carousel-text{

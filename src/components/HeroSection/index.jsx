@@ -3,6 +3,7 @@ import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { motion } from 'framer-motion'
 const HeroSection = () => {
+  
     return (
         <div className="hero-container-section">
             <Container>
@@ -21,6 +22,7 @@ const HeroSection = () => {
                         transition={ { ease: 'easeOut', duration: 3 } }>
                         Welcome to the official website of ISOLO LCDA, Where we keep you abreast of the Latest Happenings and Development in the LCDA...
                     </motion.h3>
+
                 </div>
             </Container>
         </div>
