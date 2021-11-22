@@ -54,6 +54,9 @@ html {
   justify-content: center;
 }
 
+.alice-carousel__dots{
+  margin: 15px 3px 5px !important
+}
 
 /* set the body width with media query */
 @media screen and (max-width:900px) {
