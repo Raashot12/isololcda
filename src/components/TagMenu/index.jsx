@@ -75,7 +75,7 @@ const TagMenu = () => {
                             </Link>
                         ) ) }
                     </div>
-                    <div>
+                    <div className="social-media-icon-container">
                         { getSocialLinks().map( socialLink => (
                             <a
                                 target="_blank"

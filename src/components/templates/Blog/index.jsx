@@ -1,85 +1,51 @@
-import { Container } from '@material-ui/core'
-import React from 'react'
+import React from "react"
+import { Container } from "@material-ui/core"
 import { graphql } from "gatsby"
-import Layout from '../../layout'
-import Slider from "react-slick";
-const index = ( { data } ) => {
-  console.log( data.strapiBlogs )
-  // const settings = {
-  //   customPaging: function ( i ) {
-  //     return (
-  //       <a>
-  //         <img src={ `${ baseUrl }/abstract0${ i + 1 }.jpg` } />
-  //       </a>
-  //     );
-  //   },
-  //   dots: true,
-  //   dotsClass: "slick-dots slick-thumb",
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
+import AliceCarousel from "react-alice-carousel"
+import "react-alice-carousel/lib/alice-carousel.css"
+import Layout from "../../layout"
+import MDEditor from "@uiw/react-md-editor";
+
+
+const BlogSingle = ( { data } ) => {
+  const items = data.blog.images?.map( ( item, index ) => {
+    return (
+      <div className="slider-images-singlepage">
+        <img src={ item.url } alt={ index } width="100%" loading="lazy" />
+      </div>
+    )
+  } )
+
   return (
     <>
       <Layout>
         <Container>
-          <section>
-
-            <Slider >
-              <div>
-                <h3>1</h3>
-              </div>
-              <div>
-                <h3>2</h3>
-              </div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h3>4</h3>
-              </div>
-              <div>
-                <h3>5</h3>
-              </div>
-              <div>
-                <h3>6</h3>
-              </div>
-              <div>
-                <h3>7</h3>
-              </div>
-              <div>
-                <h3>8</h3>
-              </div>
-              <div>
-                <h3>8</h3>
-              </div>
-              <div>
-                <h3>8</h3>
-              </div>
-            </Slider>
-
+          <section className="single-blog-details-container">
+            <AliceCarousel infinite mouseTracking items={ items } />
+            <section>
+              <h2 className="title-single-blog">{ data.blog.title }</h2>
+              <MDEditor.Markdown source={ data.blog.content } />
+            </section>
           </section>
         </Container>
       </Layout>
     </>
   )
 }
-
-export default index
+export default BlogSingle
 export const query = graphql`
-query( $slug: String! ) {
-  strapiBlogs( slug: { eq: $slug } ) {
-    content
-    images {
-      url
-    }
-    title
-    time
-    updated_at
-    pictures {
-      url
+        query ($slug: String!) {
+          blog:strapiBlogs(slug: { eq: $slug }) {
+          content
+      images {
+          url
+        }
+        title
+        time
+        updated_at
+        pictures {
+          url
+        }
     }
   }
-}
 `

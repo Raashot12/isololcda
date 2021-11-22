@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react"
 import moment from "moment"
 import Pagination from "../pagination"
 
+
 let PageSize = 6
 const BlogCard = ({ blogs }) => {
   const [currentPage, setCurrentPage] = useState(1)
@@ -19,15 +20,16 @@ const BlogCard = ({ blogs }) => {
       <Container>
         <div className="grid-wrapper">
           {currentTableData.map((blog, i) => {
-            console.log()
+            console.log( blog?.time )
             return (
               <Link
                 style={{ textDecoration: "none" }}
-                to={`/blogs/${blog?.slug}`}
+                to={ `/blogs/${ blog?.slug }` }
+                key={ i }
               >
-                <article>
+                <article >
                   <img
-                    src={blog.pictures.formats.medium?.url}
+                    src={ blog.pictures.formats.medium?.url }
                     className="blog-card-img"
                   />
                   <div className="blog-text-container">
@@ -35,7 +37,7 @@ const BlogCard = ({ blogs }) => {
                     <p className="blog-card-description">{blog.description}</p>
                   </div>
                   <p className="blog-card-data">
-                    <i>{moment(blog.updated_at).format("LL")}</i>
+                    <i>{ moment( blog.time ).format( "LL" ) }</i>
                   </p>
                 </article>
               </Link>

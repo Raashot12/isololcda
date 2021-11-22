@@ -8,7 +8,7 @@ const Moment = require( 'moment' )
 
 
 const Blog = (props) => {
-  const sortedArray = props.data.blogs.nodes.sort( ( a, b ) => new Moment( b.updated_at ).format( 'YYYYMMDD' ) - Moment( a.updated_at ).format( 'YYYYMMDD' ) )
+  const sortedArray = props.data.blogs.nodes.sort( ( a, b ) => new Moment( b.time ).format( 'YYYYMMDD' ) - Moment( a.time ).format( 'YYYYMMDD' ) )
   return (
     <div>
       <Layout>
@@ -23,7 +23,7 @@ export default Blog
 
 export const query = graphql`
 query MyQuery {
-  blogs:allStrapiBlogs {
+  blogs: allStrapiBlogs {
     nodes {
       description
       slug
@@ -36,6 +36,7 @@ query MyQuery {
       }
       title
       updated_at
+      time
     }
   }
 }
