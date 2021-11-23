@@ -78,6 +78,13 @@
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+  color: #6e6e6e;
+}
+.wmde-markdown {
+  p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
 }
 .slider-images-singlepage {
   width: 100%;
@@ -88,8 +95,10 @@
     height: 100%;
   }
 }
-.title-single-blog{
+.title-single-blog {
   text-align: center;
+  color: #000000;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 567px) {
   .blog-banner {
@@ -105,6 +114,16 @@
     img {
       height: auto;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .wmde-markdown {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  .title-single-blog {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
