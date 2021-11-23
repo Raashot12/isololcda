@@ -18,7 +18,7 @@ const BlogCard = ({ blogs }) => {
     <>
       <Container>
         <div className="grid-wrapper">
-          {currentTableData.map((blog, i) => {
+          { currentTableData.map( ( blog, i ) => {
             return (
               <Link
                 style={{ textDecoration: "none" }}
@@ -27,7 +27,7 @@ const BlogCard = ({ blogs }) => {
               >
                 <article >
                   <img
-                    src={ blog.pictures.formats.medium?.url === null ? blog.pictures.formats.small?.url === null : blog.pictures.formats.medium?.url }
+                    src={ blog.pictures.formats.medium?.url === undefined ? blog.pictures.formats.small?.url : blog.pictures.formats.medium?.url }
                     className="blog-card-img"
                   />
                   <div className="blog-text-container">

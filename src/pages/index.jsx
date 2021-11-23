@@ -11,7 +11,6 @@ import Inspection from "../components/Inspection"
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
   const [spinner, setSpinner] = useState( true )
   // It will be executed before rendering
-  console.log( inspection )
   useEffect( () => {
     const id = setTimeout( () => setSpinner( false ), 1000 )
 
