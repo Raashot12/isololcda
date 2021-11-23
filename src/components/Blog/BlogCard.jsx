@@ -8,7 +8,6 @@ import Pagination from "../pagination"
 let PageSize = 6
 const BlogCard = ({ blogs }) => {
   const [currentPage, setCurrentPage] = useState(1)
-  console.log(blogs)
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize
     const lastPageIndex = firstPageIndex + PageSize
@@ -20,7 +19,6 @@ const BlogCard = ({ blogs }) => {
       <Container>
         <div className="grid-wrapper">
           {currentTableData.map((blog, i) => {
-            console.log( blog?.time )
             return (
               <Link
                 style={{ textDecoration: "none" }}
@@ -29,7 +27,7 @@ const BlogCard = ({ blogs }) => {
               >
                 <article >
                   <img
-                    src={ blog.pictures.formats.medium?.url }
+                    src={ blog.pictures.formats.medium?.url === null ? blog.pictures.formats.small?.url === null : blog.pictures.formats.medium?.url }
                     className="blog-card-img"
                   />
                   <div className="blog-text-container">

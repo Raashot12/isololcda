@@ -32,11 +32,13 @@ query MyQuery {
           medium {
             url
           }
+          small {
+            url
+          }
         }
       }
       title
       updated_at
-      time
     }
   }
 }
