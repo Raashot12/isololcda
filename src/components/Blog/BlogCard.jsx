@@ -13,7 +13,7 @@ const BlogCard = ({ blogs }) => {
     const lastPageIndex = firstPageIndex + PageSize
     return blogs.slice(firstPageIndex, lastPageIndex)
   }, [currentPage])
-
+ 
   return (
     <>
       <Container>
