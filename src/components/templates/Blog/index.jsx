@@ -15,7 +15,7 @@ const BlogSingle = ( { data } ) => {
       </div>
     )
   } )
-  console.log( "http://localhost:8000" + window.location?.pathname )
+
   return (
     <>
       <Layout>
