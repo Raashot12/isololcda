@@ -5,6 +5,7 @@ import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import Layout from "../../layout"
 import MDEditor from "@uiw/react-md-editor";
+import Loader from "../../../helpers/LoaderSpinner/Loader"
 
 
 const BlogSingle = ( { data } ) => {
@@ -18,6 +19,7 @@ const BlogSingle = ( { data } ) => {
 
   return (
     <>
+      <Loader/>
       <Layout>
         <Container>
           <section className="single-blog-details-container">
