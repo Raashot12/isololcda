@@ -1,0 +1,102 @@
+:root {
+    --main-color: #2A7C6F;
+    --optional-color: #2E3AB8;
+    --white-color: #ffffff;
+    --black-color: #515355;
+    --paragraph-color: #6B7C8F;
+    --font-size: 16px;
+    --transition: .4s;
+}
+
+//Preloader Area CSS
+.preloader-area {
+    position: fixed;
+    top: 0;
+    background: var(--main-color);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    text-align: center;
+
+    .spinner {
+        width: 4em;
+        height: 4em;
+        transform: perspective(20em) rotateX(-24deg) rotateY(20deg) rotateZ(30deg);
+        transform-style: preserve-3d;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 45%;
+        transform: translateY(-45%);
+        margin-left: auto;
+        margin-right: auto;
+
+        .disc {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border: 0.3em dotted var(--white-color);
+
+            &:nth-child(1) {
+                animation: rotate 12s linear infinite;
+            }
+            &:nth-child(2) {
+                animation: rotateDisc2 12s linear infinite;
+            }
+            &:nth-child(3) {
+                animation: rotateDisc3 12s linear infinite;
+            }
+        }
+        .inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: sphereSpin 6s linear infinite;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            right: 0;
+            bottom: 0;
+            border: 2px dotted var(--white-color);
+            margin: -15px;
+        }
+    }
+}
+@keyframes sphereSpin {
+    0% {
+        transform: rotateX(360deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateDisc2 {
+    from {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(90deg) rotateZ(360deg);
+    }
+}
+@keyframes rotateDisc3 {
+    from {
+        transform: rotateY(90deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateY(90deg) rotateZ(360deg);
+    }
+}

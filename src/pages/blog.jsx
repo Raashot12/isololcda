@@ -3,6 +3,7 @@ import BlogCard from "../components/Blog/BlogCard"
 import BlogHero from "../components/Blog/BlogHero"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import Loader from "../helpers/LoaderSpinner/Loader"
 const Moment = require("moment")
 
 const Blog = props => {
@@ -12,6 +13,7 @@ const Blog = props => {
   )
   return (
     <div>
+      <Loader />
       <Layout>
         <BlogHero />
         <BlogCard blogs={sortedArray} />

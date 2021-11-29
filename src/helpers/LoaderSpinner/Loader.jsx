@@ -1,16 +1,30 @@
-import React from 'react'
-import "./Loader.css"
+import React from "react"
+import "./Loader.scss"
 const Loader = () => {
-    return (
-        <div className="loader">
-            <div className="loadingio-spinner-ripple-0r1rujj3n6i">
-                <div className="ldio-2skp4pzb2x5">
-                    <div></div>
-                    <div></div>
-                </div>
+  const [spinner, setSpinner] = React.useState(true)
+  // It will be executed before rendering
+  React.useEffect(() => {
+    const id = setTimeout(() => setSpinner(false), 1000)
+
+    return () => {
+      clearTimeout(id)
+    }
+  }, [])
+  return (
+    <>
+      {spinner && (
+        <div class="preloader-area">
+          <div class="spinner">
+            <div class="inner">
+              <div class="disc"></div>
+              <div class="disc"></div>
+              <div class="disc"></div>
             </div>
+          </div>
         </div>
-    )
+      )}
+    </>
+  )
 }
 
 export default Loader

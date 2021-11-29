@@ -1,16 +1,17 @@
-import React from 'react'
-import Layout from '../components/layout'
-import Chairman from '../components/OfficeTheChairman/Chairman'
+import React from "react"
+import Layout from "../components/layout"
+import Chairman from "../components/OfficeTheChairman/Chairman"
+import Loader from "../helpers/LoaderSpinner/Loader"
 
 const ofchairman = () => {
-    return (
-        <>
-            <Layout>
-                <Chairman />
-            </Layout>
-        </>
-    )
+  return (
+    <>
+      <Loader />
+      <Layout>
+        <Chairman />
+      </Layout>
+    </>
+  )
 }
 
 export default ofchairman
-

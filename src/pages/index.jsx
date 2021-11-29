@@ -22,17 +22,16 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
 
   return (
     <>
-      { !spinner ? (
-        <Layout>
-          <HeroSection />
-          <Inspection inspection={ inspection } />
-          <Event occassion={ occassion } />
-           <Visitation courtesy={ courtesy } /> 
-          <ContactUs />
-        </Layout>
-      ) : (
-        <Loader />
-      ) }
+      <Loader />
+      <Layout>
+        <HeroSection />
+        <Inspection inspection={ inspection } />
+        <Event occassion={ occassion } />
+        <Visitation courtesy={ courtesy } />
+        <ContactUs />
+      </Layout>
+
+
     </>
   )
 }
