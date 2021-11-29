@@ -16,7 +16,7 @@ export default class Visitation extends Component {
     }
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             centerMode: true,
             slidesToShow: 1,
