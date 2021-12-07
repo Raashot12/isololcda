@@ -14,19 +14,13 @@ const ContactUs = () => {
       [e.target.name]: e.target.value,
     } )
   }
-  //   const key =  process.env.GATSBY_AIRTABLE_API_KEY
-  // console.log(key)
   const getAirTableClient = () => {
     return new Promise( ( resolve, reject ) => {
-      // const AIRTABLE_API_KEY = process.env.GATSBY_AIRTABLE_API_KEY
-      // const AIRTABLE_BASE_KEY = process.env.GATSBY_AIRTABLE_BASE
       return resolve(
         new Airtable( { apiKey: "key5HjiQR8IA7r0Zx" } ).base( "app7slHC9hSRyErEm" )
       )
     } )
   }
-
-
 
   const handleFormSubmit = e => {
     setIsubmitting( true )
@@ -56,8 +50,6 @@ const ContactUs = () => {
       } )
 
   }
-
-
 
   return (
     <div className="contact-us-contact">
