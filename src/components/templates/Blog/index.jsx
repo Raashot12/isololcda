@@ -24,10 +24,9 @@ const BlogSingle = ({ data }) => {
           <section className="single-blog-details-container">
             <AliceCarousel
               autoPlay
-              autoPlayControls
               autoPlayStrategy="none"
-              autoPlayInterval={1000}
-              animationDuration={1000}
+              autoPlayInterval={6000}
+              animationDuration={6000}
               animationType="fadeout"
               infinite
               touchTracking={false}
