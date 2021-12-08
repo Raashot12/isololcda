@@ -1,43 +1,38 @@
 import React from "react"
-import health from "../../images/health.jpeg"
-import infrastructure from "../../images/infrastructure.jpeg"
-import education from "../../images/education.jpeg"
-import empowerment from "../../images/empowerment.jpeg"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
-import { navigate } from "@reach/router"
 import { Container } from "@material-ui/core"
 import { Link } from "gatsby"
-const data = [
+
+
+const Projectscard = (props) => {
+  const data = [
   {
     cardtitle: "HEALTH CARE",
-    image: health,
+    image: props.img[3].node.articles[0].image?.url,
     caption:
       "Medical support and Health check up in Isolo LCDA under Olasoju's Admininstration",
-    route: "/project/health",
+      route: "/gallery/health",
   },
   {
     cardtitle: "INFRASTRUCTURE",
-    image: infrastructure,
+    image: props.img[1].node.articles[0].image?.url,
     caption:
       "Investment in infrastructure is a long term requirement for growth and development in Isolo LCDA",
-    route: "/project/infrastucture",
+    route: "/gallery/infrastructure",
   },
   {
     cardtitle: "EDUCATION",
-    image: education,
+    image: props.img[0].node.articles[0].image?.url,
     caption:
       "Education remains the key to both economic and political empowerment in our policy",
-    route: "/project/eudcation",
+    route: "/gallery/education",
   },
   {
     cardtitle: "EMPOWERMENT ",
-    image: empowerment,
+    image: props.img[2].node.articles[0].image?.url,
     caption: "Empowerment of women occupies front row in our policy.",
-    route: "/empowerment",
+    route: "/gallery/empowerment",
   },
 ]
-
-const Projectscard = () => {
   return (
     <Container>
       <div className="projects-flex-container">

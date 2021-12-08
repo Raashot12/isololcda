@@ -13,12 +13,12 @@ const Loader = () => {
   return (
     <>
       {spinner && (
-        <div class="preloader-area">
-          <div class="spinner">
-            <div class="inner">
-              <div class="disc"></div>
-              <div class="disc"></div>
-              <div class="disc"></div>
+        <div className="preloader-area">
+          <div className="spinner">
+            <div className="inner">
+              <div className="disc"></div>
+              <div className="disc"></div>
+              <div className="disc"></div>
             </div>
           </div>
         </div>

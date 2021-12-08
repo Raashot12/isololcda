@@ -1,7 +1,8 @@
 const path = require( `path` )
 
-exports.createPages = ( { graphql, actions: { createPage } } ) => {
-  return graphql( `
+exports.createPages = ( { graphql, actions} ) => {
+   const { createPage } = actions;
+  const blogpost = graphql( `
     {
        allStrapiBlogs {
         nodes {
@@ -20,4 +21,27 @@ exports.createPages = ( { graphql, actions: { createPage } } ) => {
       } )
     } )
   } )
+  const gallery = graphql( `
+   {
+  allStrapiCategories {
+    edges {
+      node {
+        slug
+      }
+    }
+  }
+}
+  `).then( result => {
+    result.data.allStrapiCategories.edges.forEach((edge) => {
+      createPage( {
+        path: `/gallery/${edge.node.slug }`,
+        component: path.resolve( `./src/components/templates/Gallery/index.jsx` ),
+        context: {
+          slug: edge.node.slug,
+        },
+      } )
+    } )
+  } )
+
+  return  Promise.all([blogpost, gallery])
 }

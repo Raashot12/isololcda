@@ -8,26 +8,27 @@ import TagMenu from "../TagMenu"
 const Navbar = () => {
     const deviceSize = useMediaQuery()
     return (
-        <div>
-            <Container>
-                <nav>
-                    <div className="logobrand-container">
-                        <Link to="/">
-                            <img
-                                src={ logo }
-                                alt="logo of Local goverment Isolo Lagos"
-                                className="logo-icon"
-                            />
-                        </Link>
-                        { deviceSize === "mobile" ? <h4>ISOLO LCDA </h4> : deviceSize === "tablet" ? <h4>ISOLO LCDA</h4> : <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA</h4> }
-                    </div>
-                    <span>
-                        <button>Get In Touch</button>
-                    </span>
-                </nav>
-            </Container>
-            <TagMenu />
-        </div>
+      <div>
+        <Container>
+          <nav>
+            <div className="logobrand-container">
+              <Link to="/">
+                <img
+                  src={logo}
+                  alt="logo of Local goverment Isolo Lagos"
+                  className="logo-icon"
+                />
+              </Link>
+
+              <h4>ISOLO LOCAL COUNCIL DEVELOPMENT AREA</h4>
+            </div>
+            {/* <span>
+                      <button href="contact">Get In Touch</button>
+                  </span> */}
+          </nav>
+        </Container>
+        <TagMenu />
+      </div>
     )
 }
 

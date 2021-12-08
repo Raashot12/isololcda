@@ -49,7 +49,7 @@ const getSocialLinks = () => {
 
 const TagMenu = () => {
     const [hamburger, setHamburger] = useState( false )
-    const [activeNav, setActiveNav] = useState( "home" )
+
 
     const handleClose = () => {
         setHamburger( !hamburger )

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import ContactUs from "../components/ContactUs"
 import HeroSection from "../components/HeroSection"
 import Layout from "../components/layout"
@@ -9,10 +9,7 @@ import Visitation from "../components/LGVisition"
 import Inspection from "../components/Inspection"
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
-  const [spinner, setSpinner] = useState( true )
-  // It will be executed before rendering
-
-  return (
+ return (
     <>
       <Loader />
       <Layout>
@@ -22,8 +19,6 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
         <Visitation courtesy={ courtesy } />
         <ContactUs />
       </Layout>
-
-
     </>
   )
 }

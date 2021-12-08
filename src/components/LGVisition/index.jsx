@@ -3,60 +3,55 @@ import React, { Component } from "react"
 import Slider from "react-slick"
 
 export default class Visitation extends Component {
-    constructor ( props ) {
-        super( props )
-        this.play = this.play.bind( this )
-        this.pause = this.pause.bind( this )
+  constructor(props) {
+    super(props)
+    this.play = this.play.bind(this)
+    this.pause = this.pause.bind(this)
+  }
+  play() {
+    this.slider.slickPlay()
+  }
+  pause() {
+    this.slider.slickPause()
+  }
+  render() {
+    const settings = {
+      dots: false,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      variableWidth: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
     }
-    play() {
-        this.slider.slickPlay()
-    }
-    pause() {
-        this.slider.slickPause()
-    }
-    render() {
-        const settings = {
-            dots: false,
-            infinite: true,
-            centerMode: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 5000,
-        }
 
-        return (
-            <div>
-                <Container>
-                    <h3
-                        className="event-slider-carousel-text"
-                    >
-                        Courtesy Visits
-                    </h3>
-                    <Slider
-                        ref={ slider => ( this.slider = slider ) }
-                        { ...settings }
-                        style={ { height: "176px", overflow: "hidden", } }
-                    >
-                        { this.props.courtesy.nodes[0].images.map( ( graphics, index ) => {
-                            return (
-                                <div key={ index }>
-                                    <img
-                                        src={ graphics.url }
-                                        alt=""
-                                        height="150px"
-                                        width="auto"
-                                        loading="lazy"
-                                        style={ { marginRight: "1.5rem" } }
-                                    />
-                                </div>
-                            )
-                        } ) }
-                    </Slider>
-                </Container>
-            </div>
-        )
-    }
+    return (
+      <div>
+        <Container>
+          <h3 className="event-slider-carousel-text">Courtesy Visits</h3>
+          <Slider
+            ref={slider => (this.slider = slider)}
+            {...settings}
+            style={{ height: "176px", overflow: "hidden" }}
+          >
+            {this.props.courtesy.nodes[0].images.map((graphics, index) => {
+              return (
+                <div key={index}>
+                  <img
+                    src={graphics.url}
+                    alt=""
+                    height="150px"
+                    width="auto"
+                    loading="lazy"
+                    style={{ marginRight: "1.5rem" }}
+                  />
+                </div>
+              )
+            })}
+          </Slider>
+        </Container>
+      </div>
+    )
+  }
 }
-

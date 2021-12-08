@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.DEPLOY_URL ? "https://isololcdabackend.herokuapp.com" : "https://isololcdabackend.herokuapp.com",
-        collectionTypes: [`articles`, `occassions`, `outings`, `blogs`, `blog-series`],
+        collectionTypes: [`articles`, `occassions`, `outings`, `blogs`, `blog-series`, `articles`, 'categories'],
       },
     },
     "gatsby-plugin-sharp",

@@ -4,29 +4,40 @@ import { graphql } from "gatsby"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import Layout from "../../layout"
-import MDEditor from "@uiw/react-md-editor";
+import MDEditor from "@uiw/react-md-editor"
 import Loader from "../../../helpers/LoaderSpinner/Loader"
 
-
-const BlogSingle = ( { data } ) => {
-  const items = data.blog.images?.map( ( item, index ) => {
+const BlogSingle = ({ data }) => {
+  const items = data.blog.images?.map((item, index) => {
     return (
       <div className="slider-images-singlepage">
-        <img src={ item.url } alt={ index } width="100%" loading="lazy" />
+        <img src={item.url} alt={index} width="100%" loading="lazy" />
       </div>
     )
-  } )
+  })
 
   return (
     <>
-      <Loader/>
+      <Loader />
       <Layout>
         <Container>
           <section className="single-blog-details-container">
-            <AliceCarousel infinite mouseTracking items={ items } />
+            <AliceCarousel
+              autoPlay
+              autoPlayControls
+              autoPlayStrategy="none"
+              autoPlayInterval={1000}
+              animationDuration={1000}
+              animationType="fadeout"
+              infinite
+              touchTracking={false}
+              disableDotsControls
+              disableButtonsControls
+              items={items}
+            />
             <section>
-              <h2 className="title-single-blog">{ data.blog.title }</h2>
-              <MDEditor.Markdown source={ data.blog.content } />
+              <h2 className="title-single-blog">{data.blog.title}</h2>
+              <MDEditor.Markdown source={data.blog.content} />
             </section>
           </section>
         </Container>
@@ -36,18 +47,18 @@ const BlogSingle = ( { data } ) => {
 }
 export default BlogSingle
 export const query = graphql`
-        query ($slug: String!) {
-          blog:strapiBlogs(slug: { eq: $slug }) {
-          content
+  query ($slug: String!) {
+    blog: strapiBlogs(slug: { eq: $slug }) {
+      content
       images {
-          url
-        }
-        title
-        time
-        updated_at
-        pictures {
-          url
-        }
+        url
+      }
+      title
+      time
+      updated_at
+      pictures {
+        url
+      }
     }
   }
 `
