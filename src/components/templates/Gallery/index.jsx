@@ -18,15 +18,18 @@ const index = ( { data } ) => {
       <Layout>
         <Container>
           <AliceCarousel
+            infinite
+            mouseTracking
             autoPlay
             autoPlayStrategy="none"
             autoPlayInterval={ 6000 }
-            animationDuration={ 6000 }
+            animationDuration={ 500 }
             animationType="fadeout"
             infinite
-            touchTracking={ false }
-            disableDotsControls
-            disableButtonsControls items={ items } />
+            touchTracking={ true }
+            DotsControls
+            ButtonsControls
+            items={ items } />
         </Container>
       </Layout>
     </>

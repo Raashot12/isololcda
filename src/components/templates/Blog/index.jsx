@@ -23,17 +23,18 @@ const BlogSingle = ({ data }) => {
         <Container>
           <section className="single-blog-details-container">
             <AliceCarousel
+              infinite
+              mouseTracking
               autoPlay
               autoPlayStrategy="none"
-              autoPlayInterval={6000}
-              animationDuration={6000}
+              autoPlayInterval={ 9000 }
+              animationDuration={ 500 }
               animationType="fadeout"
               infinite
-              touchTracking={false}
-              disableDotsControls
-              disableButtonsControls
-              items={items}
-            />
+              touchTracking={ true }
+              DotsControls
+              ButtonsControls
+              items={ items } />
             <section>
               <h2 className="title-single-blog">{data.blog.title}</h2>
               <MDEditor.Markdown source={data.blog.content} />
