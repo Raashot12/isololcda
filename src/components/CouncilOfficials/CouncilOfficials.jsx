@@ -8,11 +8,15 @@ import bisodun from "../../images/5.jpg"
 import idris from "../../images/6.jpg"
 import igboman from "../../images/7.jpg"
 import kayode from "../../images/8.jpg"
+import Seo from "../seo"
 
 const CouncilOfficials = () => {
     return (
         <>
             <Container>
+                <Seo description="Isolo LCDA Local Council Chairman and Its populace."
+                    title="Isolo Officials Honorables."
+                />
                 <div
                     style={ {
                         width: "100%",

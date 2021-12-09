@@ -6,6 +6,7 @@ import "react-alice-carousel/lib/alice-carousel.css"
 import Layout from "../../layout"
 import MDEditor from "@uiw/react-md-editor"
 import Loader from "../../../helpers/LoaderSpinner/Loader"
+import Seo from "../../seo"
 
 const BlogSingle = ({ data }) => {
   const items = data.blog.images?.map((item, index) => {
@@ -20,6 +21,11 @@ const BlogSingle = ({ data }) => {
     <>
       <Loader />
       <Layout>
+        <Seo
+          title={ data.blog.title}
+          defaultTitleTag="A digital wallet for tax free shopping"
+          description={ data.blog.content.substring(0, 50)}
+        />
         <Container>
           <section className="single-blog-details-container">
             <AliceCarousel

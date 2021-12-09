@@ -1,9 +1,14 @@
 import React from "react"
+import Seo from "../seo";
 
 const Footer = () => {
     const getYear = new Date().getFullYear();
     return (
-        <div>
+        <footer>
+            <Seo
+                description="Isolo Local Council Area"
+                
+            />
             <div className="footer-first-item">
                 <h2>ISOLO LOCAL COUNCIL DEVELOPMENT AREA</h2>
                 <a
@@ -19,7 +24,7 @@ const Footer = () => {
             <div className="footerlast-item">
                 <h4>©{ getYear } by ISOLO LCDA. Proudly created with RashDev</h4>
             </div>
-        </div>
+        </footer>
     )
 }
 

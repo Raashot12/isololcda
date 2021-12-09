@@ -7,12 +7,17 @@ import Loader from "../helpers/LoaderSpinner/Loader"
 import { graphql } from "gatsby"
 import Visitation from "../components/LGVisition"
 import Inspection from "../components/Inspection"
+import Seo from "../components/seo"
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
  return (
     <>
       <Loader />
-      <Layout>
+     <Layout>
+       <Seo
+         title="Isolo LCDA"
+         defaultTitleTag="Official Website of Isolo LCDA 2021"
+       />
         <HeroSection />
         <Inspection inspection={ inspection } />
         <Event occassion={ occassion } />

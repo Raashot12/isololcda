@@ -4,6 +4,7 @@ import BlogHero from "../components/Blog/BlogHero"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Loader from "../helpers/LoaderSpinner/Loader"
+import Seo from "../components/seo"
 const Moment = require("moment")
 
 const Blog = props => {
@@ -12,13 +13,18 @@ const Blog = props => {
       new Moment(b.time).format("YYYYMMDD") - Moment(a.time).format("YYYYMMDD")
   )
   return (
-    <div>
+    <main>
       <Loader />
       <Layout>
+        <Seo
+          title="Blog"
+          defaultTitleTag="A digital wallet for tax free shopping"
+          description="Blog Content and Latest News of Isolo LCDA."
+        />
         <BlogHero />
         <BlogCard blogs={sortedArray} />
       </Layout>
-    </div>
+    </main>
   )
 }
 

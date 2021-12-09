@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import React, { useState, useMemo } from "react"
 import moment from "moment"
 import Pagination from "../pagination"
+import Seo from "../seo"
 
 
 let PageSize = 6
@@ -25,6 +26,11 @@ const BlogCard = ({ blogs }) => {
                 to={ `/blogs/${ blog?.slug }` }
                 key={ i }
               >
+                <Seo
+                  title="Isolo Blog post"
+                  defaultTitleTag="Isolo LCDA blog post"
+                  description={blog.description}
+                />
                 <article >
                   <img
                     src={ blog.pictures.formats.medium?.url === undefined ? blog.pictures.formats.small?.url : blog.pictures.formats.medium?.url }

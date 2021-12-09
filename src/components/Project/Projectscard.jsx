@@ -1,6 +1,7 @@
 import React from "react"
 import { Container } from "@material-ui/core"
 import { Link } from "gatsby"
+import Seo from "../seo"
 
 
 const Projectscard = (props) => {
@@ -43,6 +44,11 @@ const Projectscard = (props) => {
               to={article.route}
               key={article.route}
             >
+              <Seo
+                title="Projects"
+                defaultTitleTag="The project page of Isolo LCDA"
+                description="The is the projects and acitiviites bank of Isolo LCDA"
+              />
               <h2>{article.cardtitle}</h2>
               <img
                 src={article.image}
