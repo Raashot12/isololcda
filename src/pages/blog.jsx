@@ -18,7 +18,7 @@ const Blog = props => {
       <Layout>
         <Seo
           title="Blog"
-          defaultTitleTag="A digital wallet for tax free shopping"
+          defaultTitleTag="Official Blog Page Isolo LCDA"
           description="Blog Content and Latest News of Isolo LCDA."
         />
         <BlogHero />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CouncilOfficials from '../../components/CouncilOfficials/CouncilOfficials'
 import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 import Loader from '../../helpers/LoaderSpinner/Loader'
 
 
@@ -19,6 +20,10 @@ const Officals = () => {
     return (
         <>
             { !spinner ? <Layout>
+                <Seo
+                    title="Officials"
+                    defaultTitleTag="Council Official Page Isolo LCDA"
+                />
                 <CouncilOfficials />
             </Layout> :
                 <Loader></Loader> }

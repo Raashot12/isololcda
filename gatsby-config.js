@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "http://www.isololcda.com.ng",
-    title: "Isolo LCDA",
-    author: "@Rashdev",
-    description: "Isolo Local Government Development Council official website. It is a website designed and stationed by the chairman of Isolo LCDA to showcase his desire for technological driven society."
+    title: `Isolo LCDA`,
+    description: `Isolo LCDA official website`,
+    author: `@rashdev`,
+    siteUrl: `https://www.isololcda.com.ng`,
   },
   plugins: [
     "gatsby-plugin-sass",

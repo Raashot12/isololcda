@@ -29,7 +29,7 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={ pageStyles }>
-      <Seo title="404: Not found" />
+      {/* <Seo title="404: Not found" /> */}
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>

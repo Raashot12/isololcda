@@ -23,7 +23,6 @@ const BlogSingle = ({ data }) => {
       <Layout>
         <Seo
           title={ data.blog.title}
-          defaultTitleTag="A digital wallet for tax free shopping"
           description={ data.blog.content.substring(0, 50)}
         />
         <Container>

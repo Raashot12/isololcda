@@ -14,9 +14,6 @@ const CouncilOfficials = () => {
     return (
         <>
             <Container>
-                <Seo description="Isolo LCDA Local Council Chairman and Its populace."
-                    title="Isolo Officials Honorables."
-                />
                 <div
                     style={ {
                         width: "100%",
