@@ -27,7 +27,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = defaultTitleTag || site.siteMetadata?.title
-  const hosturl = "https://www.isololcda.com.ng/"
+  const hosturl = "https://www.isololcda.com.ng"
   return (
     <Helmet
       htmlAttributes={ {
@@ -58,7 +58,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
         },
         {
           name: `og:url`,
-          content: `${ hosturl + path}`
+          content: `${ hosturl+path}`
         }, 
         {
           name: `twitter:creator`,
