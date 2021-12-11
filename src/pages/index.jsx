@@ -15,7 +15,7 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
       <Loader />
      <Layout>
        <Seo
-         title="Isolo local council development area"
+         title="Isolo Local Council Development Area"
          defaultTitleTag="Official Website of Isolo LCDA 2021"
        />
         <HeroSection />
