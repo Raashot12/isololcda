@@ -39,6 +39,8 @@ const Layout = ( { children } ) => {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
         <meta property="og:site_name" content="Isolo Local Council Development Area" data-react-helmet="true"  />
         <meta property="twitter:site" content="@isololocalcouncildevelopmentarea" data-react-helmet="true" />
         <meta property="icon" content="./../images/icon.png" data-react-helmet="true"  />
