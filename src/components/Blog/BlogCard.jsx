@@ -30,6 +30,7 @@ const BlogCard = ({ blogs }) => {
                   <img
                     src={ blog.pictures.formats.medium?.url === undefined ? blog.pictures.formats.small?.url : blog.pictures.formats.medium?.url }
                     className="blog-card-img"
+                    alt={ blog.title }
                   />
                   <div className="blog-text-container">
                     <p className="blog-text-title">{blog.title}</p>

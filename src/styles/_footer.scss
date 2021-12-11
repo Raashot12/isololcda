@@ -22,13 +22,13 @@ $primary-color: #2a7c6f;
   }
   .telephone-number {
     color: $primary-color;
-      font-size: 0.63rem;
+      font-size: 1rem;
   }
   .address {
     margin-top: 0.5rem;
     font-family: "Open Sans", sans-serif;
     color: $primary-color;
-    font-size: 0.63rem;
+    font-size: 1rem;
   }
 }
 .footerlast-item {
@@ -43,6 +43,7 @@ $primary-color: #2a7c6f;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
+    font-weight: bold;
   }
 }
 @media screen and (min-width: 900px) {
@@ -59,15 +60,11 @@ $primary-color: #2a7c6f;
   .footerlast-item {
     background-color: $primary-color;
     width: 100%;
+    
 
     h4 {
-      font-size: 0.875rem;
+      font-size: 1rem;
+      font-weight: bold;
     }
-  }
-  .telephone-number{
-      font-size: .9rem !important;
-  }
-  .address{
-      font-size: .9rem !important;
   }
 }

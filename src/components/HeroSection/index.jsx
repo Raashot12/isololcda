@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <div className="hero-container-section">
             <Container>
-                <StaticImage src="../../images/chairman.webp" alt="A dinosaur" />
+                <StaticImage src="../../images/chairman.webp" alt="Isolo LCDA Chairman" />
                 <div className="welcome-greeting">
                     <h1>
                         WELCOME TO ISOLO LOCAL COUNCIL DEVELOPMENT AREA

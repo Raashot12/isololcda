@@ -18,6 +18,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag } ) {
           siteMetadata {
             title
             description
+            author
           }
         }
       }
@@ -67,6 +68,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag } ) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        
       ].concat( meta ) }
     />
   )
