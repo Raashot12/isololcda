@@ -23,6 +23,7 @@ const Officals = () => {
                 <Seo
                     title="Officials"
                     defaultTitleTag="Council Official Page Isolo LCDA"
+                    description="Blog Content and Latest News of Isolo LCDA."
                 />
                 <CouncilOfficials />
             </Layout> :

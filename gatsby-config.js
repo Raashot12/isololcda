@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Isolo LCDA`,
-    description: `Isolo LCDA official website`,
+    description: `Welcome to the official website of ISOLO LCDA, Where we keep you abreast of the Latest Happenings and Development in the LCDA.`,
     author: `@rashdev`,
     siteUrl: `https://www.isololcda.com.ng`,
   },

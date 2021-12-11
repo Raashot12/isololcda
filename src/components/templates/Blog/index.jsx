@@ -22,8 +22,8 @@ const BlogSingle = ({ data }) => {
       <Loader />
       <Layout>
         <Seo
-          title={ data.blog.title}
-          description={ data.blog.content.substring(0, 50)}
+          title="Isolo LCDA"
+          description="Welcome to the official website of ISOLO LCDA, Where we keep you abreast of the Latest Happenings and Development in the LCDA."
         />
         <Container>
           <section className="single-blog-details-container">
