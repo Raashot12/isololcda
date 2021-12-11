@@ -39,9 +39,10 @@ const Layout = ( { children } ) => {
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
         />
-        <meta property="og:site_name" content="isoloclda.com.ng" data-react-helmet="true"  />
+        <meta property="og:site_name" content="IsoloLCDA" data-react-helmet="true"  />
         <meta property="twitter:site" content="@isololcda" data-react-helmet="true" />
-        <meta property="og:url" content="https://www.isololcda.com.ng/" data-react-helmet="true" />
+        <meta property="icon" content="./../images/icon.png" />
+        <meta property="og:image" content="./../images/icon.png" />
         <meta property="og:type" content="website" data-react-helmet="true" />
         <meta property="twitter:card" content="summary" data-react-helmet="true" />
         <meta property="twitter:title" content="summary" data-react-helmet="true"  />

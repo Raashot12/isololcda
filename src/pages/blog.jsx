@@ -20,6 +20,7 @@ const Blog = props => {
           title="Blog"
           defaultTitleTag="Official Blog Page Isolo LCDA"
           description="Blog Content and Latest News of Isolo LCDA."
+          path={"/blog"}
         />
         <BlogHero />
         <BlogCard blogs={sortedArray} />
