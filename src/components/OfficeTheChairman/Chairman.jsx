@@ -12,12 +12,13 @@ const Chairman = () => {
                 </div>
 
                 <div className="chairman-statement">
-                    <motion.h1
+                    <motion.h3
                         animate={ { opacity: [0, 1], y: [100, 100, 0] } }
                         transition={ { ease: 'easeOut', duration: 1 } }
-                    >MISSION STATEMENT</motion.h1>
+                    >MISSION STATEMENT</motion.h3>
                     <hr />
-                    <motion.p
+                    <motion.h1
+                        className="msission_statement_text"
                         animate={ { opacity: [0, 1], y: [150, 0] } }
                         transition={ { ease: "easeOut", delay: 0.6 } }
                     >
@@ -26,7 +27,7 @@ const Chairman = () => {
                         driven governance that shall consistently and conscientiously
                         undertake projects capable of making life more abundant for the good
                         people of the council area - "Isolo of our Dream".
-                    </motion.p>
+                    </motion.h1>
                 </div>
             </Container>
         </div>

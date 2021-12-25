@@ -14,9 +14,9 @@ const HeroSection = () => {
                         WELCOME TO ISOLO LOCAL COUNCIL DEVELOPMENT AREA
                     </h1>
                     <p>" Towards the Isolo of our Dreams"</p>
-                    <h3 className="greetings-last-text">
+                    <h1 className="greetings-last-text">
                         Welcome to the official website of ISOLO LCDA, Where we keep you abreast of the Latest Happenings and Development in the LCDA...
-                    </h3>
+                    </h1>
 
                 </div>
             </Container>
