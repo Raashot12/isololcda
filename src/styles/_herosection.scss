@@ -1,5 +1,14 @@
 .hero-container-section {
   padding-top: 2rem;
+   .hero-img-container{
+    width: 100%;
+    margin: 0 auto;
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
 }
 .welcome-greeting {
   margin-bottom: 2rem;
@@ -31,7 +40,9 @@
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
   }
+ 
 }
+
 
 @media screen and (min-width: 900px) {
   .hero-container-section {

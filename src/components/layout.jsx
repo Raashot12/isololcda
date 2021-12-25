@@ -43,8 +43,6 @@ const Layout = ( { children } ) => {
         <meta name="googlebot" content="index,follow" />
         <meta property="og:site_name" content="Isolo Local Council Development Area" data-react-helmet="true"  />
         <meta property="twitter:site" content="@isololocalcouncildevelopmentarea" data-react-helmet="true" />
-        <meta property="icon" content="./../images/icon.png" data-react-helmet="true"  />
-        <meta property="og:image" content="./../images/icon.png" data-react-helmet="true"  />
         <meta property="og:type" content="website" data-react-helmet="true" />
         <meta property="twitter:card" content="summary" data-react-helmet="true" />
         <meta property="twitter:title" content="summary" data-react-helmet="true"  />

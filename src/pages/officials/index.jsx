@@ -23,7 +23,7 @@ const Officals = () => {
                 <Seo
                     title="Officials"
                     defaultTitleTag="Council Official Page Isolo LCDA"
-                    path={"/officials"}
+                    path={ "/officials" }
                 />
                 <CouncilOfficials />
             </Layout> :

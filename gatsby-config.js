@@ -10,12 +10,19 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
       },
     },
+      {
+        resolve: `gatsby-plugin-offline`,
+        options: {
+          precachePages: [`/blogs/`,`officials`,  `/projects/*`],
+        },
+      },
     {
       resolve: `gatsby-source-strapi`,
       options: {

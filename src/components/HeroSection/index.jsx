@@ -6,7 +6,9 @@ const HeroSection = () => {
     return (
         <div className="hero-container-section">
             <Container>
-                <StaticImage src="../../images/chairman.webp" alt="Isolo LCDA Chairman" />
+                <div className="hero-img-container">
+                    <img src="https://res.cloudinary.com/rashot/image/upload/v1640416836/Untitled-1_whn0ej.webp" alt="Isolo LCDA Chairman" />
+                </div>
                 <div className="welcome-greeting">
                     <h1>
                         WELCOME TO ISOLO LOCAL COUNCIL DEVELOPMENT AREA
