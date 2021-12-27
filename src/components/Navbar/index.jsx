@@ -25,6 +25,7 @@ const Navbar = () => {
             {/* <span>
                       <button href="contact">Get In Touch</button>
                   </span> */}
+            { deviceSize === "desktop" || deviceSize === "tablet" ? <img src="https://res.cloudinary.com/rashot/image/upload/v1640622882/sg-7_j5izoa.gif" style={ { borderRadius: "1rem" } } alt="greeting for festive season" height="100px" width="auto" />: ""}  
           </nav>
         </Container>
         <TagMenu />
