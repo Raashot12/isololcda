@@ -1,14 +1,13 @@
 import React from "react"
 import { Container } from "@material-ui/core"
 import { Link } from "gatsby"
-import Seo from "../seo"
 
 
 const Projectscard = (props) => {
   const data = [
   {
     cardtitle: "HEALTH CARE",
-    image: props.img[3].node.articles[0].image?.url,
+    image: props.img[2].node.articles[0].image?.url,
     caption:
       "Medical support and Health check up in Isolo LCDA under Olasoju's Admininstration",
       route: "/gallery/health",
@@ -29,7 +28,7 @@ const Projectscard = (props) => {
   },
   {
     cardtitle: "EMPOWERMENT ",
-    image: props.img[2].node.articles[0].image?.url,
+    image: props.img[3].node.articles[0].image?.url,
     caption: "Empowerment of women occupies front row in our policy.",
     route: "/gallery/empowerment",
   },

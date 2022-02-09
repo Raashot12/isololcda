@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="hero-container-section">
             <Container>
                 <div className="hero-img-container">
-                    <img src="https://res.cloudinary.com/rashot/image/upload/v1640416836/Untitled-1_whn0ej.webp" alt="Isolo LCDA Chairman" />
+                    <img src="https://res.cloudinary.com/rashot/image/upload/v1644427610/chairman_s1i8am.webp" alt="Isolo LCDA Chairman" />
                 </div>
                 <div className="welcome-greeting">
                     <h1>
