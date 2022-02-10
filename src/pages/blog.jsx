@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import Seo from "../components/seo"
+import ScrollToTop from "../helpers/ScrollToTop"
 const Moment = require("moment")
 
 const Blog = props => {
@@ -14,6 +15,7 @@ const Blog = props => {
   )
   return (
     <main>
+      <ScrollToTop>
       <Loader />
       <Layout>
         <Seo
@@ -24,7 +26,8 @@ const Blog = props => {
         />
         <BlogHero />
         <BlogCard blogs={sortedArray} />
-      </Layout>
+        </Layout>
+      </ScrollToTop>
     </main>
   )
 }

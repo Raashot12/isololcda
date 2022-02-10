@@ -8,10 +8,12 @@ import { graphql } from "gatsby"
 import Visitation from "../components/LGVisition"
 import Inspection from "../components/Inspection"
 import Seo from "../components/seo"
+import ScrollToTop from "../helpers/ScrollToTop"
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
  return (
-    <>
+   <>
+     <ScrollToTop>
       <Loader />
      <Layout>
        <Seo
@@ -23,7 +25,8 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
         <Event occassion={ occassion } />
         <Visitation courtesy={ courtesy } />
         <ContactUs />
-      </Layout>
+       </Layout>
+     </ScrollToTop>
     </>
   )
 }
