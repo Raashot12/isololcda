@@ -7,21 +7,20 @@ import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import ScrollToTop from "../helpers/ScrollToTop"
 const project = ( { data } ) => {
+  ScrollToTop()
   return (
     <>
-      <ScrollToTop>
-        <Loader></Loader>
-        <Layout>
-          <Seo
-            title="Projects"
-            defaultTitleTag="The project page of Isolo LCDA"
-            description="The is the projects and acitiviites bank of Isolo LCDA"
-            path={ "/projects" }
-          />
-          <ProjectHero />
-          <Projectscard img={ data.gallery.edges } />
-        </Layout>
-      </ScrollToTop>
+      <Loader></Loader>
+      <Layout>
+        <Seo
+          title="Projects"
+          defaultTitleTag="The project page of Isolo LCDA"
+          description="The is the projects and acitiviites bank of Isolo LCDA"
+          path={ "/projects" }
+        />
+        <ProjectHero />
+        <Projectscard img={ data.gallery.edges } />
+      </Layout>
     </>
   )
 }

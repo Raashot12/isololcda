@@ -8,25 +8,23 @@ import { graphql } from "gatsby"
 import Visitation from "../components/LGVisition"
 import Inspection from "../components/Inspection"
 import Seo from "../components/seo"
-import ScrollToTop from "../helpers/ScrollToTop"
+
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
- return (
-   <>
-     <ScrollToTop>
+  return (
+    <>
       <Loader />
-     <Layout>
-       <Seo
-         title="Isolo Local Council Development Area"
-         defaultTitleTag="Official Website of Isolo LCDA 2021"
-       />
+      <Layout>
+        <Seo
+          title="Isolo Local Council Development Area"
+          defaultTitleTag="Official Website of Isolo LCDA 2021"
+        />
         <HeroSection />
         <Inspection inspection={ inspection } />
         <Event occassion={ occassion } />
         <Visitation courtesy={ courtesy } />
         <ContactUs />
-       </Layout>
-     </ScrollToTop>
+      </Layout>
     </>
   )
 }

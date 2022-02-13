@@ -13,9 +13,9 @@ const Blog = props => {
     (a, b) =>
       new Moment(b.time).format("YYYYMMDD") - Moment(a.time).format("YYYYMMDD")
   )
+  ScrollToTop()
   return (
-    <main>
-      <ScrollToTop>
+    <main>    
       <Loader />
       <Layout>
         <Seo
@@ -27,7 +27,6 @@ const Blog = props => {
         <BlogHero />
         <BlogCard blogs={sortedArray} />
         </Layout>
-      </ScrollToTop>
     </main>
   )
 }

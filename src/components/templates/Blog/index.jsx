@@ -42,7 +42,7 @@ const BlogSingle = ({ data }) => {
               items={ items } />
             <section>
               <h2 className="title-single-blog">{data.blog.title}</h2>
-              <MDEditor.Markdown source={data.blog.content} />
+              <MDEditor.Markdown source={data.blog.content}  style={{textAlign:"justify"}} />
             </section>
           </section>
         </Container>
