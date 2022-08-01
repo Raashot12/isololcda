@@ -12,6 +12,7 @@ const project = ( { data } ) => {
   return (
     <>
       <GatsbySeo
+        title="IsoloLcda - Project"
         defaultTitleTag="Isolo Local Council Development Area"
         description="The socio-political and economic activities of Isolo Local Council Development Area"
       />

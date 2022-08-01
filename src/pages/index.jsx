@@ -13,7 +13,7 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
   return (
     <>
       <GatsbySeo
-        title="Isolo LCDA"
+        title="IsoloLCDA - Home"
         defaultTitleTag="Official Website of Isolo LCDA 2022"
         description="Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA."
       />

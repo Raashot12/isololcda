@@ -18,7 +18,7 @@ const Blog = props => {
   return (
     <>
       <GatsbySeo
-        title="Blog"
+        title="IsoloLcda - Blog"
         defaultTitleTag="Official Blog Page Isolo LCDA"
         description="Blog Content and Latest News of Isolo Local Government Development Area."
         path={ "/blog" }
