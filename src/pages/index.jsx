@@ -13,12 +13,12 @@ import Seo from "../components/seo"
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
   return (
     <>
+      <Seo
+        title="Isolo Local Council Development Area"
+        defaultTitleTag="Official Website of Isolo LCDA 2021"
+        description="Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA."
+      />
       <Layout>
-        <Seo
-          title="Isolo Local Council Development Area"
-          defaultTitleTag="Official Website of Isolo LCDA 2021"
-          description="Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA."
-        />
         <Loader />
         <HeroSection />
         {/* <Inspection inspection={ inspection } />

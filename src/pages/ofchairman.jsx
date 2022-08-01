@@ -9,15 +9,15 @@ const ofchairman = () => {
   ScrollToTop()
   return (
     <>
+      <Seo
+        title="Office of the chairman"
+        defaultTitleTag="Isolo LCDA official website"
+        description="This is mission and official statement of the chairman on promise to Isolo great
+           city"
+        path={ "/ofchairman" }
+      />
       <Loader />
       <Layout>
-        <Seo
-          title="Office of the chairman"
-          defaultTitleTag="Isolo LCDA official website"
-          description="This is mission and official statement of the chairman on promise to Isolo great
-           city"
-          path={ "/ofchairman" }
-        />
         <Chairman />
       </Layout>
     </>
