@@ -12,7 +12,22 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    'gatsby-plugin-next-seo',
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options: {
+        openGraph: {
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://www.isololcda.com.ng',
+          site_name: 'IsoloLCDA',
+        },
+        twitter: {
+          handle: '@isolo_lcda',
+          site: '@https://twitter.com/isolo_lcda',
+          cardType: 'summary_large_image',
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
