@@ -6,28 +6,28 @@ import { graphql } from "gatsby"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import Seo from "../components/seo"
 import ScrollToTop from "../helpers/ScrollToTop"
-const Moment = require("moment")
+const Moment = require( "moment" )
 
 const Blog = props => {
   const sortedArray = props.data.blogs.nodes.sort(
-    (a, b) =>
-      new Moment(b.time).format("YYYYMMDD") - Moment(a.time).format("YYYYMMDD")
+    ( a, b ) =>
+      new Moment( b.time ).format( "YYYYMMDD" ) - Moment( a.time ).format( "YYYYMMDD" )
   )
   ScrollToTop()
   return (
-    <main>    
+    <>
+      <Seo
+        title="Blog"
+        defaultTitleTag="Official Blog Page Isolo LCDA"
+        description="Blog Content and Latest News of Isolo Local Government Development Area."
+        path={ "/blog" }
+      />
       <Loader />
       <Layout>
-        <Seo
-          title="Blog"
-          defaultTitleTag="Official Blog Page Isolo LCDA"
-          description="Blog Content and Latest News of Isolo LCDA."
-          path={"/blog"}
-        />
         <BlogHero />
-        <BlogCard blogs={sortedArray} />
-        </Layout>
-    </main>
+        <BlogCard blogs={ sortedArray } />
+      </Layout>
+    </>
   )
 }
 

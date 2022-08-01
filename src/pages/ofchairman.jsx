@@ -24,4 +24,4 @@ const ofchairman = () => {
   )
 }
 
-export default ofchairman
+export default ofchairman;
