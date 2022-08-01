@@ -3,8 +3,8 @@ module.exports = {
     title: `Isolo Local Council Development Area(LCDA)`,
     description: `Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA.`,
     author: `@isololcda`,
-    twitterUsername: `@isolo_lcda`,
-    siteUrl: `https://www.isololcda.com.ng`,
+    twitterUsername: `@isololcda`,
+    siteUrl: `https://www.isololcda.com.ng/`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -22,8 +22,8 @@ module.exports = {
           site_name: 'IsoloLCDA',
         },
         twitter: {
-          handle: '@isolo_lcda',
-          site: '@https://twitter.com/isolo_lcda',
+          handle: '@isololcda',
+          site: '@https://twitter.com/isololcda',
           cardType: 'summary_large_image',
         },
       },
