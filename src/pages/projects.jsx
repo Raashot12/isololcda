@@ -4,13 +4,14 @@ import ProjectHero from "../components/Project/ProjectHero"
 import Projectscard from "../components/Project/Projectscard"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import { graphql } from "gatsby"
-import Seo from "../components/seo"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import ScrollToTop from "../helpers/ScrollToTop"
+
 const project = ( { data } ) => {
   ScrollToTop()
   return (
     <>
-      <Seo
+      <GatsbySeo
         defaultTitleTag="Isolo Local Council Development Area"
         description="The socio-political and economic activities of Isolo Local Council Development Area"
       />

@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import Seo from "../components/seo"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import ScrollToTop from "../helpers/ScrollToTop"
 const Moment = require( "moment" )
 
@@ -16,7 +17,7 @@ const Blog = props => {
   ScrollToTop()
   return (
     <>
-      <Seo
+      <GatsbySeo
         title="Blog"
         defaultTitleTag="Official Blog Page Isolo LCDA"
         description="Blog Content and Latest News of Isolo Local Government Development Area."

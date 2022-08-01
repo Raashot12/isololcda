@@ -3,6 +3,7 @@ import CouncilOfficials from "../../components/CouncilOfficials/CouncilOfficials
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Loader from "../../helpers/LoaderSpinner/Loader"
+import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 const Officals = () => {
     const [spinner, setSpinner] = useState( true )
@@ -18,7 +19,7 @@ const Officals = () => {
 
     return (
         <>
-          <Seo
+            <GatsbySeo
               title="Officials"
               defaultTitleTag="Council Official Page Isolo Local Goverment Council"
               description="Do well to know the Chairman of Isolo Local Goverment Council and its cabinet. Reach for any complaint or issues in locality within Isolo jurisdication "
