@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Isolo Local Council Development Area`,
+    title: `Isolo Local Council Development Area(LCDA)`,
     description: `Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA.`,
     author: `@isololcda`,
     twitterUsername: `@isolo_lcda`,
