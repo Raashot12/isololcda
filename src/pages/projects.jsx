@@ -11,13 +11,14 @@ const project = ( { data } ) => {
   ScrollToTop()
   return (
     <>
-      <GatsbySeo
-        title="IsoloLcda - Project"
-        defaultTitleTag="Isolo Local Council Development Area"
-        description="The socio-political and economic activities of Isolo Local Council Development Area"
-      />
+
       <Loader></Loader>
       <Layout>
+        <GatsbySeo
+          title="IsoloLcda - Project"
+          defaultTitleTag="Isolo Local Council Development Area"
+          description="The socio-political and economic activities of Isolo Local Council Development Area"
+        />
         <ProjectHero />
         <Projectscard img={ data.gallery.edges } />
       </Layout>

@@ -19,14 +19,15 @@ const Officals = () => {
 
   return (
     <>
-      <GatsbySeo
-        title="IsoloLcda - Officials"
-        defaultTitleTag="Council Official Page Isolo Local Goverment Council"
-        description="Do well to know the Chairman of Isolo Local Goverment Council and its cabinet. Reach for any complaint or issues in locality within Isolo jurisdication "
-        path={ "/officials" }
-      />
+
       { !spinner ? (
         <Layout>
+          <GatsbySeo
+            title="IsoloLcda - Officials"
+            defaultTitleTag="Council Official Page Isolo Local Goverment Council"
+            description="Do well to know the Chairman of Isolo Local Goverment Council and its cabinet. Reach for any complaint or issues in locality within Isolo jurisdication "
+            path={ "/officials" }
+          />
           <CouncilOfficials />
         </Layout>
       ) : (

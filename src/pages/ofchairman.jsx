@@ -9,15 +9,16 @@ const ofchairman = () => {
   ScrollToTop()
   return (
     <>
-      <GatsbySeo
-        title="IsoloLcda - Chairman"
-        defaultTitleTag="Isolo LCDA official website"
-        description="This is mission and official statement of the chairman on promise to Isolo great
-           city"
-        path={ "/ofchairman" }
-      />
+
       <Loader />
       <Layout>
+        <GatsbySeo
+          title="IsoloLcda - Chairman"
+          defaultTitleTag="Isolo LCDA official website"
+          description="This is mission and official statement of the chairman on promise to Isolo great
+           city"
+          path={ "/ofchairman" }
+        />
         <Chairman />
       </Layout>
     </>

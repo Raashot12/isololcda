@@ -17,13 +17,13 @@ const Blog = props => {
   ScrollToTop()
   return (
     <>
+      <Loader />
       <GatsbySeo
         title="IsoloLcda - Blog"
         defaultTitleTag="Official Blog Page Isolo LCDA"
         description="Blog Content and Latest News of Isolo Local Government Development Area."
         path={ "/blog" }
       />
-      <Loader />
       <Layout>
         <BlogHero />
         <BlogCard blogs={ sortedArray } />
