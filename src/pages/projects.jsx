@@ -4,8 +4,8 @@ import ProjectHero from "../components/Project/ProjectHero"
 import Projectscard from "../components/Project/Projectscard"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import { graphql } from "gatsby"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import ScrollToTop from "../helpers/ScrollToTop"
+import Seo from "../components/seo"
 
 const project = ( { data } ) => {
   ScrollToTop()
@@ -14,7 +14,7 @@ const project = ( { data } ) => {
 
       <Loader></Loader>
       <Layout>
-        <GatsbySeo
+        <Seo
           title="IsoloLcda - Project"
           defaultTitleTag="Isolo Local Council Development Area"
           description="The socio-political and economic activities of Isolo Local Council Development Area"

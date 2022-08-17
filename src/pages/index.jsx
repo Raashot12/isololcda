@@ -7,14 +7,14 @@ import Loader from "../helpers/LoaderSpinner/Loader"
 import { graphql } from "gatsby"
 import Visitation from "../components/LGVisition"
 import Inspection from "../components/Inspection"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import Seo from "../components/seo"
 
 const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
   return (
     <>
 
       <Layout>
-        <GatsbySeo
+        <Seo
           title="IsoloLCDA - Home"
           defaultTitleTag="Official Website of Isolo LCDA 2022"
           description="Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in IsoloLcda."

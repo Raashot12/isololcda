@@ -4,6 +4,7 @@ module.exports = {
     description: `Welcome to the official website of Isolo Local Council Development Area, Where we keep you abreast of the Latest Happenings and Development in the LCDA.`,
     author: `@isololcda`,
     twitterUsername: `@isololcda`,
+    lang: `en`,
     siteUrl: `https://www.isololcda.com.ng/`,
   },
   plugins: [
@@ -12,22 +13,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
-    {
-      resolve: 'gatsby-plugin-next-seo',
-      options: {
-        openGraph: {
-          type: 'website',
-          locale: 'en_IE',
-          url: 'https://www.isololcda.com.ng',
-          site_name: 'IsoloLCDA',
-        },
-        twitter: {
-          handle: '@isololcda',
-          site: '@https://twitter.com/isololcda',
-          cardType: 'summary_large_image',
-        },
-      },
-    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

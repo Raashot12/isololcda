@@ -4,15 +4,14 @@ import Chairman from "../components/OfficeTheChairman/Chairman"
 import Seo from "../components/seo"
 import Loader from "../helpers/LoaderSpinner/Loader"
 import ScrollToTop from "../helpers/ScrollToTop"
-import { GatsbySeo } from 'gatsby-plugin-next-seo';
+
 const ofchairman = () => {
   ScrollToTop()
   return (
     <>
-
       <Loader />
       <Layout>
-        <GatsbySeo
+        <Seo
           title="IsoloLcda - Chairman"
           defaultTitleTag="Isolo LCDA official website"
           description="This is mission and official statement of the chairman on promise to Isolo great

@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
+function Seo( { description, lang, meta, title, defaultTitleTag, path = "/" } ) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
             title
             description
             author
+            twitterUsername
           }
         }
       }
@@ -47,6 +48,10 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
         {
           property: `og:description`,
           content: metaDescription,
+        },  
+        {
+          property: `og:site_name`,
+          content: `IsoloLCDA`
         },
         {
           property: `og:type`,
@@ -67,6 +72,26 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path="/" } ) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata?.twitterUsername
+        },
+        {
+          name: `og:image`,
+          content: `https://res.cloudinary.com/rashot/image/upload/v1644427610/chairman_s1i8am.webp`
+        },
+        {
+          name: `og:image:secure_url`,
+          content: `https://res.cloudinary.com/rashot/image/upload/v1644427610/chairman_s1i8am.webp`
+        },
+        {
+          name: `og:image:width`,
+          content: `964`
+        },
+        {
+          name: `og:image:height`,
+          content: `298`
         },
         {
           name: `twitter:description`,
