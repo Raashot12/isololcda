@@ -51,7 +51,7 @@ function Seo( { description, lang, meta, title, defaultTitleTag, path = "/" } ) 
         },  
         {
           property: `og:site_name`,
-          content: `IsoloLcda`
+          content: `Isolo LCDA`
         },
         {
           property: `og:type`,

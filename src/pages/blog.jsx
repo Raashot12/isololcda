@@ -19,7 +19,7 @@ const Blog = props => {
       <Loader />
       <Seo
         title="IsoloLcda - Blog"
-        defaultTitleTag="Isolo Local Council Development Area(LCDA)"
+        defaultTitleTag="Official Blog Page Isolo LCDA"
         description="Blog Content and Latest News of Isolo Local Government Development Area."
         path={ "/blog" }
       />

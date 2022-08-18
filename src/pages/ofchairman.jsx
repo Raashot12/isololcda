@@ -13,7 +13,7 @@ const ofchairman = () => {
       <Layout>
         <Seo
           title="IsoloLcda - Chairman"
-          defaultTitleTag="Isolo Local Council Development Area(LCDA)"
+          defaultTitleTag="Isolo LCDA official website"
           description="This is mission and official statement of the chairman on promise to Isolo great
            city"
           path={ "/ofchairman" }
