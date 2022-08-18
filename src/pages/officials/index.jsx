@@ -23,7 +23,7 @@ const Officals = () => {
         <Layout>
           <Seo
             title="IsoloLcda - Officials"
-            defaultTitleTag="Council Official Page Isolo Local Goverment Council"
+            defaultTitleTag="Isolo Local Council Development Area(LCDA)"
             description="Do well to know the Chairman of Isolo Local Goverment Council and its cabinet. Reach for any complaint or issues in locality within Isolo jurisdication "
             path={ "/officials" }
           />
