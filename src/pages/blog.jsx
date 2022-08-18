@@ -18,7 +18,7 @@ const Blog = props => {
     <>
       <Loader />
       <Seo
-        title="IsoloLcda - Blog"
+        title="IsoloLCDA - Blog"
         defaultTitleTag="Official Blog Page Isolo LCDA"
         description="Blog Content and Latest News of Isolo Local Government Development Area."
         path={ "/blog" }

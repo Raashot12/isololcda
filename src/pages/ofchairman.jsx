@@ -12,7 +12,7 @@ const ofchairman = () => {
       <Loader />
       <Layout>
         <Seo
-          title="IsoloLcda - Chairman"
+          title="IsoloLCDA - Chairman"
           defaultTitleTag="Isolo LCDA official website"
           description="This is mission and official statement of the chairman on promise to Isolo great
            city"

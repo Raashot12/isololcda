@@ -22,7 +22,7 @@ const Officals = () => {
       { !spinner ? (
         <Layout>
           <Seo
-            title="IsoloLcda - Officials"
+            title="IsoloLCDA - Officials"
             defaultTitleTag="Council Official Page Isolo Local Goverment Council"
             description="Do well to know the Chairman of Isolo Local Goverment Council and its cabinet. Reach for any complaint or issues in locality within Isolo jurisdication "
             path={ "/officials" }

@@ -15,7 +15,7 @@ const project = ( { data } ) => {
       <Loader></Loader>
       <Layout>
         <Seo
-          title="IsoloLcda - Project"
+          title="IsoloLCDA - Project"
           defaultTitleTag="Isolo Local Council Development Area"
           description="The socio-political and economic activities of Isolo Local Council Development Area"
         />
