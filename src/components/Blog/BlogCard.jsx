@@ -32,6 +32,13 @@ const BlogCard = ({ blogs }) => {
                     className="blog-card-img"
                     alt={ blog.title }
                   />
+                  <div className="blog-text-container">
+                    <p className="blog-text-title">{ blog.title }</p>
+                    <p className="blog-card-description">{ blog.description }</p>
+                  </div>
+                  <p className="blog-card-data">
+                    <i>{ moment( blog.time ).format( "LL" ) }</i>
+                  </p>
                 </article>
               </Link>
             )
