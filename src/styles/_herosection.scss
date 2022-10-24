@@ -1,14 +1,13 @@
 .hero-container-section {
   padding-top: 2rem;
-   .hero-img-container{
+  .hero-img-container {
     width: 100%;
     margin: 0 auto;
-    img{
+    img {
       object-fit: cover;
       width: 100%;
     }
   }
-
 }
 .welcome-greeting {
   margin-bottom: 2rem;
@@ -23,6 +22,9 @@
     margin-bottom: 0.5rem;
     text-align: center;
     font-weight: bold;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
   }
   p {
     color: $primary-color;
@@ -30,6 +32,9 @@
     font-weight: lighter;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
   }
   .greetings-last-text {
     color: $primary-color;
@@ -40,9 +45,28 @@
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
   }
- 
 }
-
+// Animation Section
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
 @media screen and (min-width: 900px) {
   .hero-container-section {

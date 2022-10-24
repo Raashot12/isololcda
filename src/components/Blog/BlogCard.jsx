@@ -18,7 +18,7 @@ const BlogCard = ({ blogs }) => {
   return (
     <>
       <Container>
-        <div className="grid-wrapper">
+        <div className="grid-countdown-wrapper">
           { currentTableData.map( ( blog, i ) => {
             return (
               <Link
@@ -28,17 +28,10 @@ const BlogCard = ({ blogs }) => {
               >
                 <article >
                   <img
-                    src={ blog.pictures.formats.medium?.url === undefined ? blog.pictures.formats.small?.url : blog.pictures.formats.medium?.url }
+                    src={ blog?.pictures?.formats?.medium?.url === undefined ? blog?.pictures?.formats?.small?.url : blog?.pictures?.formats?.medium?.url }
                     className="blog-card-img"
                     alt={ blog.title }
                   />
-                  <div className="blog-text-container">
-                    <p className="blog-text-title">{blog.title}</p>
-                    <p className="blog-card-description">{blog.description}</p>
-                  </div>
-                  <p className="blog-card-data">
-                    <i>{ moment( blog.time ).format( "LL" ) }</i>
-                  </p>
                 </article>
               </Link>
             )
