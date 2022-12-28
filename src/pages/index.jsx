@@ -3,11 +3,10 @@ import ContactUs from "../components/ContactUs"
 import HeroSection from "../components/HeroSection"
 import Layout from "../components/layout"
 import Loader from "../helpers/LoaderSpinner/Loader"
-import { graphql } from "gatsby"
 import Seo from "../components/seo"
 import Countdown from "../components/Homepage/countdown"
 
-const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
+const IndexPage = (  ) => {
   return (
     <>
       <Layout>
@@ -19,9 +18,6 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
         />
         <HeroSection /> 
         <Countdown />
-        {/* <Inspection inspection={ inspection } />
-        <Event occassion={ occassion } />
-        <Visitation courtesy={ courtesy } /> */}
         <ContactUs />
       </Layout>
     </>
@@ -29,30 +25,4 @@ const IndexPage = ( { data: { occassion, courtesy, inspection } } ) => {
 }
 
 export default IndexPage
-export const pageQuery = graphql`
-{
-  courtesy: allStrapiOccassions(
-    filter: {outings: {elemMatch: {occassion: {eq: 2}}}}
-  ) {
-    nodes {
-      images {
-        url
-      }
-    }
-  }
-    occassion :allStrapiOccassions(filter: {outings: {elemMatch: {occassion: {eq: 4}}}}) {
-    nodes {
-      images {
-        url
-      }
-    }
-  }
-  inspection :allStrapiOccassions(filter: {outings: {elemMatch: {occassion: {eq: 3}}}}) {
-    nodes {
-      images {
-        url
-      }
-    }
-  }
-}
-`
+

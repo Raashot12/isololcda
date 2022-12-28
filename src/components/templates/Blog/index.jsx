@@ -35,7 +35,6 @@ const BlogSingle = ({ data }) => {
               autoPlayInterval={ 9000 }
               animationDuration={ 500 }
               animationType="fadeout"
-              infinite
               touchTracking={ true }
               DotsControls
               ButtonsControls

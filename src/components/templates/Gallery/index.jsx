@@ -25,7 +25,6 @@ const index = ( { data } ) => {
             autoPlayInterval={ 6000 }
             animationDuration={ 500 }
             animationType="fadeout"
-            infinite
             touchTracking={ true }
             DotsControls
             ButtonsControls

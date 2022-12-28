@@ -42,21 +42,13 @@ const Countdown = () => {
   const [timerSeconds, setTimerSeconds] = useState( "00" )
   const [animate, setAnimate] = useState( false );
   const [selectedId, setSelectedId] = useState( null )
-  // const [item, setItems] = useState( null )
-  // // const countdownDate = new Date( 'December 26, 2020 00:00:00' ).getTime()
-  // // console.log( countdownDate )
-  // const selectedImage = ( id ) => {
-  //   setSelectedId( id )
-  //   const response = imageDate.find( ( value ) => value.id === id )
-  //   setItems( response )
-  // }
   const handleClick = ( id ) => {
     setSelectedId( id )
     setAnimate( !animate )
   };
   let interval = useRef()
   const sartTimer = () => {
-    const countdownDate = new Date( "December 26, 2022 00:00:00" ).getTime()
+    const countdownDate = new Date( "December 26, 2023 00:00:00" ).getTime()
     interval = setInterval( () => {
       const now = new Date().getTime()
       const distance = countdownDate - now
